@@ -5927,7 +5927,7 @@ transform: translate(0,0);
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: 3611px;
+  height: auto;
   overflow: hidden;
   width: 100%;
 }
@@ -7670,7 +7670,7 @@ transform: translate(0,0);
   display: flex;
   height: 268px;
   margin-top: 71px;
-  min-width: 771px;
+  min-width: 100%;
   padding: 43.9px 90.6px;
 }
 
