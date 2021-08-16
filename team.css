@@ -1993,7 +1993,7 @@ transform: translate(0,0);
   display: flex;
   flex-direction: column;
   margin-left: 22.0px;
-  margin-top: 150px;
+  margin-top: 140px;
   min-height: 727px;
   width: 1108px;
 }
@@ -2049,7 +2049,7 @@ transform: translate(0,0);
   height: 604px;
   justify-content: flex-end;
   margin-right: 0px;
-  margin-top: 100px;
+  margin-top: 140px;
   min-width: 100%;
   padding: 102px 68.3px;
 }
@@ -5921,15 +5921,14 @@ transform: translate(0,0);
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: 3611px;
+  height: auto;
   overflow: hidden;
-  width: 770.57px;
+  width: 100%;
 }
 
 .tablet .overlap-group1 {
   background-size: 100% 100%;
   height: 472px;
-  position: relative;
   width: 100%;
 }
 
@@ -5992,9 +5991,9 @@ transform: translate(0,0);
   align-items: center;
   display: flex;
   height: 34px;
-  left: 20px;
   position: absolute;
   top: 17px;
+  left: 100px;
 }
 
 .tablet .x1200px-iaest-epng2-1 {
@@ -6035,6 +6034,7 @@ transform: translate(0,0);
   margin-left: 11px;
   min-height: 9px;
   width: 32px;
+  right: 40px ;
 }
 
 .tablet .corporate {
@@ -7664,7 +7664,7 @@ transform: translate(0,0);
   display: flex;
   height: 268px;
   margin-top: 71px;
-  min-width: 771px;
+  min-width: 100%;
   padding: 43.9px 90.6px;
 }
 
@@ -7684,7 +7684,7 @@ transform: translate(0,0);
   align-items: flex-start;
   display: flex;
   height: 176px;
-  left: 0;
+  left: 80px;
   position: absolute;
   top: 0;
 }
@@ -7795,6 +7795,7 @@ transform: translate(0,0);
   position: absolute;
   top: 6px;
   width: 12px;
+  right: 220px;
 }
 
 .tablet .image-1 {
