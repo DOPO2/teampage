@@ -1,0 +1,7858 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,500,600|Nunito:400,300,600|Roboto:500");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root { 
+  --black: #000000;
+  --black-haze: #f6f6f6;
+  --chateau-green: #38b44a;
+  --chateau-green-2: #37b449;
+  --cinnabar: #ef4036;
+  --eerie-black: #1b1b1bcc;
+  --eerie-black-42: #1b1b1b80;
+  --navy-blue: #1b75bb;
+  --puerto-rico: #49c0b5;
+  --razzmatazz: #d91b5b;
+  --shark: #2a2a2a;
+  --texas-rose: #f9ae56;
+  --tree-poppy: #f7931d;
+  --vivid-violet: #91268f;
+  --white: #ffffff;
+ 
+  --font-size-s: 23px;
+  --font-size-xl2: 10.9px;
+  --font-size-xxs: 10.1px;
+  --font-size-xxxs: 7.7px;
+  --font-size-xxxxl: 25px;
+  --font-size-xxxxs: 7.5px;
+  --font-size-xxxxxs: 7.1px;
+ 
+  --font-family-montserrat: "Montserrat", Helvetica;
+  --font-family-nunito: "Nunito", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.nunito-normal-eerie-black-25px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-eerie-black-7-7px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-eerie-black-10-9px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xl2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-razzmatazz-23px {
+  color: var(--razzmatazz);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-vivid-violet-23px {
+  color: var(--vivid-violet);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-razzmatazz-7-1px {
+  color: var(--razzmatazz);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-medium-white-18-8px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 18.8px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nunito-normal-cinnabar-23px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-puerto-rico-23px {
+  color: var(--puerto-rico);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-light-black-25px {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.nunito-semi-bold-black-22-6px {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: 22.6px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nunito-normal-eerie-black-18-1px {
+  color: var(--eerie-black-42);
+  font-family: var(--font-family-nunito);
+  font-size: 18.1px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-medium-white-8px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nunito-normal-razzmatazz-10-1px {
+  color: var(--razzmatazz);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-medium-white-18-3px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 18.3px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nunito-normal-vivid-violet-7-1px {
+  color: var(--vivid-violet);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.montserrat-semi-bold-shark-72px {
+  color: var(--shark);
+  font-family: var(--font-family-montserrat);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nunito-normal-navy-blue-23px {
+  color: var(--navy-blue);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-chateau-green-23px {
+  color: var(--chateau-green);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-vivid-violet-10-1px {
+  color: var(--vivid-violet);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-cinnabar-7-1px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-puerto-rico-7-1px {
+  color: var(--puerto-rico);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-semi-bold-black-10-7px {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: 10.7px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nunito-normal-eerie-black-9-1px {
+  color: var(--eerie-black-42);
+  font-family: var(--font-family-nunito);
+  font-size: 9.1px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-cinnabar-10-1px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-puerto-rico-10-1px {
+  color: var(--puerto-rico);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-light-black-10-9px {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xl2);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.nunito-semi-bold-black-9-9px {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: 9.9px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nunito-normal-eerie-black-7-9px {
+  color: var(--eerie-black-42);
+  font-family: var(--font-family-nunito);
+  font-size: 7.9px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-navy-blue-7-1px {
+  color: var(--navy-blue);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-chateau-green-7-1px {
+  color: var(--chateau-green);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-light-black-7-5px {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxs);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.montserrat-bold-white-96px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.montserrat-medium-tree-poppy-50px {
+  color: var(--tree-poppy);
+  font-family: var(--font-family-montserrat);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-navy-blue-50px {
+  color: var(--navy-blue);
+  font-family: var(--font-family-montserrat);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nunito-semi-bold-navy-blue-23px {
+  color: var(--navy-blue);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.montserrat-medium-cinnabar-50px {
+  color: var(--cinnabar);
+  font-family: var(--font-family-montserrat);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-puerto-rico-50px {
+  color: var(--puerto-rico);
+  font-family: var(--font-family-montserrat);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-vivid-violet-45px {
+  color: var(--vivid-violet);
+  font-family: var(--font-family-montserrat);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-chateau-green-50px {
+  color: var(--chateau-green-2);
+  font-family: var(--font-family-montserrat);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-razzmatazz-45px {
+  color: var(--razzmatazz);
+  font-family: var(--font-family-montserrat);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nunito-normal-black-27-1px {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: 27.1px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.montserrat-semi-bold-shark-31-4px {
+  color: var(--shark);
+  font-family: var(--font-family-montserrat);
+  font-size: 31.4px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nunito-normal-navy-blue-10-1px {
+  color: var(--navy-blue);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-normal-chateau-green-10-1px {
+  color: var(--chateau-green);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-7-7px-razzmatazz {
+  border: 7.7px solid var(--razzmatazz);
+}
+
+.border-7-7px-vivid-violet {
+  border: 7.7px solid var(--vivid-violet);
+}
+
+.border-2-4px-razzmatazz {
+  border: 2.4px solid var(--razzmatazz);
+}
+
+.border-7-7px-navy-blue {
+  border: 7.7px solid var(--navy-blue);
+}
+
+.border-7-7px-cinnabar {
+  border: 7.7px solid var(--cinnabar);
+}
+
+.border-7-7px-puerto-rico {
+  border: 7.7px solid var(--puerto-rico);
+}
+
+.border-3-4px-razzmatazz {
+  border: 3.4px solid var(--razzmatazz);
+}
+
+.border-2-4px-vivid-violet {
+  border: 2.4px solid var(--vivid-violet);
+}
+
+.border-7-7px-chateau-green {
+  border: 7.7px solid var(--chateau-green);
+}
+
+.border-3-4px-vivid-violet {
+  border: 3.4px solid var(--vivid-violet);
+}
+
+.border-2-4px-navy-blue {
+  border: 2.4px solid var(--navy-blue);
+}
+
+.border-2-4px-cinnabar {
+  border: 2.4px solid var(--cinnabar);
+}
+
+.border-2-4px-puerto-rico {
+  border: 2.4px solid var(--puerto-rico);
+}
+
+.border-3-4px-navy-blue {
+  border: 3.4px solid var(--navy-blue);
+}
+
+.border-3-4px-cinnabar {
+  border: 3.4px solid var(--cinnabar);
+}
+
+.border-3-4px-puerto-rico {
+  border: 3.4px solid var(--puerto-rico);
+}
+
+.border-2-4px-chateau-green {
+  border: 2.4px solid var(--chateau-green);
+}
+
+.border-7-7px-texas-rose {
+  border: 7.7px solid var(--texas-rose);
+}
+
+.border-3-4px-chateau-green {
+  border: 3.4px solid var(--chateau-green);
+}
+
+.ipad-pro-11-1 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 7930px;
+  overflow: hidden;
+  width: 1280px;
+}
+
+.ipad-pro-11-1 .overlap-group-1 {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610f8ab2d6e20479a213c9a4/releases/611a1e577a244dff901a5625/img/14-6-3@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 795px;
+  position: relative;
+  width: 1280px;
+}
+
+.ipad-pro-11-1 .rectangle-114 {
+  height: 795px;
+  left: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.ipad-pro-11-1 .rectangle-129 {
+  height: 152px;
+  left: 0;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.ipad-pro-11-1 .text-61 {
+  left: 46px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 308px;
+  width: 1142px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.ipad-pro-11-1 .text-61.bp4-animate-enter {
+  animation: bp4-animate-enter-frames 0.70s ease-in 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes bp4-animate-enter-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.ipad-pro-11-1 .group-1-1 {
+  align-items: center;
+  display: flex;
+  height: 61px;
+  left: 16px;
+  position: absolute;
+  top: 15px;
+}
+
+.ipad-pro-11-1 .x1200px-iaest-epng2-1 {
+  align-self: flex-start;
+  height: 61px;
+  margin-top: -0.06px;
+  object-fit: cover;
+  width: 150px;
+}
+
+.ipad-pro-11-1 .place {
+  letter-spacing: 0;
+  margin-left: 588px;
+  margin-top: 0.13px;
+  min-height: 17px;
+  width: 55px;
+}
+
+.ipad-pro-11-1 .incoming {
+  letter-spacing: 0;
+  margin-left: 31px;
+  margin-top: 0.13px;
+  min-height: 17px;
+  width: 86px;
+}
+
+.ipad-pro-11-1 .outgoing {
+  letter-spacing: 0;
+  margin-left: 15px;
+  margin-top: 0.13px;
+  min-height: 17px;
+  width: 78px;
+}
+
+.ipad-pro-11-1 .member {
+  letter-spacing: 0;
+  margin-left: 16px;
+  margin-top: 0.13px;
+  min-height: 17px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .corporate {
+  letter-spacing: 0;
+  margin-left: 9px;
+  margin-top: 0.13px;
+  min-height: 17px;
+  width: 86px;
+}
+
+.ipad-pro-11-1 .team {
+  letter-spacing: 0;
+  margin-left: 15px;
+  margin-top: 0.13px;
+  min-height: 17px;
+  width: 48px;
+}
+
+.ipad-pro-11-1 .line-22 {
+  height: 12px;
+  left: 54px;
+  position: absolute;
+  top: 582px;
+  width: 562px;
+}
+
+.ipad-pro-11-1 .the-board {
+  letter-spacing: 0;
+  margin-left: 9.0px;
+  margin-top: 112px;
+  min-height: 88px;
+  min-width: 453px;
+}
+
+.ipad-pro-11-1 .line-4 {
+  height: 2px;
+  margin-left: 6.78px;
+  margin-top: 30px;
+  width: 206px;
+}
+
+.ipad-pro-11-1 .group-52 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7.0px;
+  margin-top: 137px;
+  min-height: 418px;
+  width: 385px;
+}
+
+.ipad-pro-11-1 .group-25 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 366px;
+  width: 387px;
+}
+
+.ipad-pro-11-1 .chairperson {
+  letter-spacing: 0;
+  min-height: 61px;
+  min-width: 387px;
+}
+
+.ipad-pro-11-1 .group-15 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.54px;
+  margin-top: 27px;
+  min-height: 278px;
+  width: 214px;
+}
+
+.ipad-pro-11-1 .overlap-group2 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 2.0px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .mask-group {
+  height: 212px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 212px;
+}
+
+.ipad-pro-11-1 .ellipse {
+  border-radius: 109.64px;
+  height: 219px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .aadarsh-ashok {
+  letter-spacing: 0;
+  margin-right: 0.67px;
+  margin-top: 28px;
+  min-height: 34px;
+  min-width: 174px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .group-50 {
+  align-items: flex-start;
+  display: flex;
+  height: 37px;
+  margin-left: 0.22px;
+  margin-top: 15px;
+  min-width: 129px;
+}
+
+.ipad-pro-11-1 .basic-mail-4 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 34px;
+  margin-bottom: 0;
+  padding: 5.2px 2.5px;
+  width: 34px;
+}
+
+.ipad-pro-11-1 .basic-mail-5 {
+  height: 24px;
+  width: 29px;
+}
+
+.ipad-pro-11-1 .brand-linked-in-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 13px;
+  padding: 4.0px 4.0px;
+  width: 34px;
+}
+
+.ipad-pro-11-1 .brand {
+  height: 26px;
+  width: 26px;
+}
+
+.ipad-pro-11-1 .brand-instagram-2 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 34px;
+  margin-left: 13px;
+  margin-top: 0.92px;
+  padding: 3.9px 3.9px;
+  width: 34px;
+}
+
+.ipad-pro-11-1 .group-51 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 6.66px;
+  margin-top: 138px;
+  min-height: 502px;
+  width: 827px;
+}
+
+.ipad-pro-11-1 .group-18 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 453px;
+  width: 829px;
+}
+
+.ipad-pro-11-1 .team-exchange {
+  letter-spacing: 0;
+  margin-left: 0.34px;
+  min-height: 61px;
+  min-width: 455px;
+}
+
+.ipad-pro-11-1 .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 344px;
+  margin-left: 2.0px;
+  margin-top: 47px;
+  min-width: 831px;
+}
+
+.ipad-pro-11-1 .group-15-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 344px;
+  width: 217px;
+}
+
+.ipad-pro-11-1 .overlap-group2-1 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 3.7px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .sanjeeth-p {
+  letter-spacing: 0;
+  margin-right: 1.37px;
+  margin-top: 25px;
+  min-height: 34px;
+  min-width: 127px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-6 {
+  height: 2px;
+  margin-right: 3.7px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .text-66 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 17px;
+  min-height: 31px;
+  text-align: center;
+  width: 215px;
+}
+
+.ipad-pro-11-1 .group-16 {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  margin-top: 0.18px;
+  min-height: 343px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .overlap-group {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 4.0px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .saumya-modi {
+  letter-spacing: 0;
+  margin-right: 3.55px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 154px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-7-1 {
+  height: 2px;
+  margin-right: 5.11px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .national-liaison {
+  letter-spacing: 0;
+  margin-right: 2.66px;
+  margin-top: 17px;
+  min-height: 31px;
+  text-align: center;
+  width: 167px;
+}
+
+.ipad-pro-11-1 .group-17 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 344px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .vani-mittal {
+  letter-spacing: 0;
+  margin-right: 1.97px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 121px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 19px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .national-liaison-1 {
+  letter-spacing: 0;
+  margin-right: 16.91px;
+  margin-top: 17px;
+  min-height: 31px;
+  text-align: center;
+  width: 167px;
+}
+
+.ipad-pro-11-1 .group-42 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 7.27px;
+  margin-top: 14px;
+  min-width: 733px;
+}
+
+.ipad-pro-11-1 .group-36 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 34px;
+  margin-bottom: 0;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .basic-mail {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 31px;
+  margin-bottom: 0;
+  padding: 4.8px 2.5px;
+  width: 31px;
+}
+
+.ipad-pro-11-1 .basic-mail-1 {
+  height: 22px;
+  width: 26px;
+}
+
+.ipad-pro-11-1 .brand-linked-in {
+  align-items: flex-start;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  padding: 3.5px 3.8px;
+  width: 31px;
+}
+
+.ipad-pro-11-1 .brand-1 {
+  height: 24px;
+  width: 24px;
+}
+
+.ipad-pro-11-1 .brand-instagram {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  margin-top: 0.92px;
+  padding: 3.5px 3.5px;
+  width: 31px;
+}
+
+.ipad-pro-11-1 .group-37 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 181px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-38 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 172px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-53 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7.54px;
+  margin-top: 139px;
+  min-height: 533px;
+  width: 826px;
+}
+
+.ipad-pro-11-1 .group-19 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 485px;
+  width: 828px;
+}
+
+.ipad-pro-11-1 .team-incoming {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 61px;
+  min-width: 439px;
+}
+
+.ipad-pro-11-1 .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 376px;
+  margin-left: 2.0px;
+  margin-top: 47px;
+  min-width: 830px;
+}
+
+.ipad-pro-11-1 .group-14 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 375px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .aditya-italia {
+  letter-spacing: 0;
+  margin-right: 1.9px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 135px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .head-incoming {
+  letter-spacing: 0;
+  margin-right: 2.35px;
+  margin-top: 17px;
+  min-height: 62px;
+  text-align: center;
+  width: 163px;
+}
+
+.ipad-pro-11-1 .group-15-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  margin-top: 0;
+  min-height: 376px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .atharva-uplap {
+  letter-spacing: 0;
+  margin-right: 2.16px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 165px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .text-67 {
+  letter-spacing: 0;
+  margin-right: 3.67px;
+  margin-top: 17px;
+  min-height: 63px;
+  text-align: center;
+  width: 129px;
+}
+
+.ipad-pro-11-1 .group-16-1 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 376px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .nimisha-modi {
+  letter-spacing: 0;
+  margin-right: 1.97px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 155px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .text-68 {
+  letter-spacing: 0;
+  margin-right: 2.48px;
+  margin-top: 17px;
+  min-height: 63px;
+  text-align: center;
+  width: 129px;
+}
+
+.ipad-pro-11-1 .group-43 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 0.85px;
+  margin-top: 14px;
+  min-width: 740px;
+}
+
+.ipad-pro-11-1 .group-36-1 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 34px;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .brand-linked-in-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  margin-top: 0;
+  padding: 3.5px 3.8px;
+  width: 31px;
+}
+
+.ipad-pro-11-1 .group-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 180px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-38-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  justify-content: flex-end;
+  margin-left: 180px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-54 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.54px;
+  margin-top: 147px;
+  min-height: 535px;
+  width: 836px;
+}
+
+.ipad-pro-11-1 .group-21 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 487px;
+  width: 838px;
+}
+
+.ipad-pro-11-1 .team-administration {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 61px;
+  min-width: 619px;
+}
+
+.ipad-pro-11-1 .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 378px;
+  margin-left: 2.0px;
+  margin-top: 47px;
+  min-width: 840px;
+}
+
+.ipad-pro-11-1 .group-18-1 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 375px;
+  width: 222px;
+}
+
+.ipad-pro-11-1 .overlap-group4 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 4.09px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .mask-group-1 {
+  height: 212px;
+  left: 4px;
+  position: absolute;
+  top: 6px;
+  width: 212px;
+}
+
+.ipad-pro-11-1 .pratyusha-m {
+  letter-spacing: 0;
+  margin-right: 3.06px;
+  margin-top: 27px;
+  min-height: 34px;
+  min-width: 148px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-7-2 {
+  height: 2px;
+  margin-right: 4.09px;
+  margin-top: 16px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .text-71 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 18px;
+  min-height: 62px;
+  text-align: center;
+  width: 220px;
+}
+
+.ipad-pro-11-1 .group-17-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 94px;
+  margin-top: 0;
+  min-height: 376px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .name {
+  letter-spacing: 0;
+  margin-right: 4.28px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 94px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-7 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 21px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .text {
+  letter-spacing: 0;
+  margin-right: 3.01px;
+  margin-top: 15px;
+  min-height: 63px;
+  text-align: center;
+  width: 154px;
+}
+
+.ipad-pro-11-1 .group-16-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 376px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .navya-kriti {
+  letter-spacing: 0;
+  margin-right: 3.91px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 124px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .group-44 {
+  align-items: flex-end;
+  display: flex;
+  margin-left: 2.85px;
+  margin-top: 14px;
+  min-width: 746px;
+}
+
+.ipad-pro-11-1 .group-36-2 {
+  align-items: flex-start;
+  align-self: flex-start;
+  display: flex;
+  height: 34px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-37-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-bottom: 0;
+  margin-left: 187px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-38-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-bottom: 0;
+  margin-left: 179px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-56 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.54px;
+  margin-top: 116px;
+  min-height: 577px;
+  width: 1157px;
+}
+
+.ipad-pro-11-1 .group-23 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 528px;
+  width: 1159px;
+}
+
+.ipad-pro-11-1 .text-72 {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 110px;
+  min-width: 754px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .flex-row-3 {
+  align-items: flex-end;
+  display: flex;
+  height: 376px;
+  margin-right: 0;
+  margin-top: 42px;
+  min-width: 1159px;
+}
+
+.ipad-pro-11-1 .group-14-1 {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 375px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .prateek-jha {
+  letter-spacing: 0;
+  margin-right: 5.12px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 130px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-1 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .head-bdpr {
+  letter-spacing: 0;
+  margin-right: 2.66px;
+  margin-top: 17px;
+  min-height: 62px;
+  text-align: center;
+  width: 132px;
+}
+
+.ipad-pro-11-1 .group-15-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 376px;
+  padding: 0 0.0px;
+  width: 240px;
+}
+
+.ipad-pro-11-1 .overlap-group3 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 2.43px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .shantanu-joshi {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 170px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-6-1 {
+  height: 2px;
+  margin-right: 2.43px;
+  margin-top: 19px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .text-73 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 17px;
+  min-height: 63px;
+  text-align: center;
+  width: 238px;
+}
+
+.ipad-pro-11-1 .group-18-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 91px;
+  min-height: 376px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .aryan-mukund {
+  letter-spacing: 0;
+  margin-right: 2.98px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 167px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .text-74 {
+  letter-spacing: 0;
+  margin-right: 3.58px;
+  margin-top: 17px;
+  min-height: 63px;
+  text-align: center;
+  width: 206px;
+}
+
+.ipad-pro-11-1 .group-29 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 91px;
+  min-height: 376px;
+  width: 214px;
+}
+
+.ipad-pro-11-1 .group-17-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 294px;
+  width: 214px;
+}
+
+.ipad-pro-11-1 .shrimanti-pal {
+  letter-spacing: 0;
+  margin-right: 0.86px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 151px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-8 {
+  height: 2px;
+  margin-right: 0.84px;
+  margin-top: 19px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .text-75 {
+  letter-spacing: 0;
+  margin-left: 0.84px;
+  margin-top: 18px;
+  min-height: 63px;
+  text-align: center;
+  width: 195px;
+}
+
+.ipad-pro-11-1 .group-55 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 0.15px;
+  margin-top: 14px;
+  min-width: 1070px;
+}
+
+.ipad-pro-11-1 .group {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .basic-mail-2 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 31px;
+  margin-bottom: 0;
+  padding: 5.0px 2.5px;
+  width: 31px;
+}
+
+.ipad-pro-11-1 .basic-mail-3 {
+  height: 21px;
+  width: 26px;
+}
+
+.ipad-pro-11-1 .group-3-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 192px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 179px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-58 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 14.54px;
+  margin-top: 150px;
+  min-height: 468px;
+  width: 519px;
+}
+
+.ipad-pro-11-1 .group-24 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 419px;
+  width: 521px;
+}
+
+.ipad-pro-11-1 .team-finance {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 61px;
+  min-width: 398px;
+}
+
+.ipad-pro-11-1 .flex-row-4 {
+  align-items: flex-start;
+  display: flex;
+  height: 327px;
+  margin-left: 2.0px;
+  margin-top: 31px;
+  min-width: 523px;
+}
+
+.ipad-pro-11-1 .group-15-4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 324px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .saharsh-barve {
+  letter-spacing: 0;
+  margin-right: 3.53px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 166px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-2 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 8px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .head-finance {
+  letter-spacing: 0;
+  margin-right: 2.65px;
+  margin-top: 8px;
+  min-height: 31px;
+  text-align: center;
+  width: 156px;
+}
+
+.ipad-pro-11-1 .group-17-3 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 327px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .shreya-sharma {
+  letter-spacing: 0;
+  margin-right: 2.97px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 172px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .finance-in-charge {
+  letter-spacing: 0;
+  margin-right: 2.07px;
+  margin-top: 10px;
+  min-height: 31px;
+  text-align: center;
+  width: 192px;
+}
+
+.ipad-pro-11-1 .group-57 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 0.15px;
+  margin-top: 14px;
+  min-width: 432px;
+}
+
+.ipad-pro-11-1 .group-60 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 29.41px;
+  margin-top: 151px;
+  min-height: 1068px;
+  width: 877px;
+}
+
+.ipad-pro-11-1 .group-30 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3.05px;
+  min-height: 531px;
+  width: 874px;
+}
+
+.ipad-pro-11-1 .text-76 {
+  letter-spacing: 0;
+  margin-left: 11.46px;
+  min-height: 110px;
+  min-width: 613px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .flex-row-5 {
+  align-items: flex-start;
+  display: flex;
+  height: 378px;
+  margin-left: 2.0px;
+  margin-top: 43px;
+  min-width: 876px;
+}
+
+.ipad-pro-11-1 .group-14-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 376px;
+  width: 290px;
+}
+
+.ipad-pro-11-1 .overlap-group2-2 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-left: 13.23px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .siddharth-shah {
+  letter-spacing: 0;
+  margin-left: 13.78px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 176px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-5 {
+  height: 2px;
+  margin-right: 4.45px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .text-77 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 18px;
+  min-height: 63px;
+  text-align: center;
+  width: 288px;
+}
+
+.ipad-pro-11-1 .group-15-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 62px;
+  min-height: 376px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .parikalp-singh {
+  letter-spacing: 0;
+  margin-right: 1.59px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 163px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .text-78 {
+  letter-spacing: 0;
+  margin-right: 2.66px;
+  margin-top: 18px;
+  min-height: 63px;
+  text-align: center;
+  width: 191px;
+}
+
+.ipad-pro-11-1 .group-17-4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 378px;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .nandini-dixit {
+  letter-spacing: 0;
+  margin-right: 3.18px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 147px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .text-79 {
+  letter-spacing: 0;
+  margin-right: 1.15px;
+  margin-top: 20px;
+  min-height: 63px;
+  text-align: center;
+  width: 191px;
+}
+
+.ipad-pro-11-1 .group-45 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  margin-left: 32.8px;
+  margin-top: 12px;
+  min-width: 749px;
+}
+
+.ipad-pro-11-1 .brand-linked-in-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  padding: 3.8px 3.8px;
+  width: 31px;
+}
+
+.ipad-pro-11-1 .group-37-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 189px;
+  min-width: 126px;
+}
+
+.ipad-pro-11-1 .group-59 {
+  height: 398px;
+  margin-top: 92px;
+  position: relative;
+  width: 839px;
+}
+
+.ipad-pro-11-1 .group-15-6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 229px;
+}
+
+.ipad-pro-11-1 .overlap-group2-3 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 9.76px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .mask-group-2 {
+  height: 212px;
+  left: 6px;
+  position: absolute;
+  top: 4px;
+  width: 212px;
+}
+
+.ipad-pro-11-1 .prabhat-namdharini {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 227px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-6-2 {
+  height: 2px;
+  margin-right: 9.76px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .data-analyst {
+  letter-spacing: 0;
+  margin-right: 8.41px;
+  margin-top: 20px;
+  min-height: 31px;
+  text-align: center;
+  width: 136px;
+}
+
+.ipad-pro-11-1 .overlap-group5 {
+  height: 398px;
+  left: 50px;
+  position: absolute;
+  top: 0;
+  width: 793px;
+}
+
+.ipad-pro-11-1 .group-18-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 562px;
+  position: absolute;
+  top: 0;
+  width: 231px;
+}
+
+.ipad-pro-11-1 .overlap-group2-4 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 2.41px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.ipad-pro-11-1 .sai-rohit {
+  letter-spacing: 0;
+  margin-right: 0.88px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 103px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-6-3 {
+  height: 2px;
+  margin-right: 2.41px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.ipad-pro-11-1 .text-80 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 20px;
+  min-height: 63px;
+  text-align: center;
+  width: 229px;
+}
+
+.ipad-pro-11-1 .group-46 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 364px;
+}
+
+.ipad-pro-11-1 .brand-instagram-1 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  margin-top: 0.92px;
+  padding: 3.8px 3.5px;
+  width: 31px;
+}
+
+.ipad-pro-11-1 .group-17-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 314px;
+  position: absolute;
+  top: 0;
+  width: 216px;
+}
+
+.ipad-pro-11-1 .sanya-gupta {
+  letter-spacing: 0;
+  margin-right: 4.18px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 146px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .it-manager {
+  letter-spacing: 0;
+  margin-right: 1.15px;
+  margin-top: 22px;
+  min-height: 31px;
+  text-align: center;
+  width: 119px;
+}
+
+.ipad-pro-11-1 .group-31 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 22.0px;
+  margin-top: 307px;
+  min-height: 727px;
+  width: 1108px;
+}
+
+.ipad-pro-11-1 .the-local-committee {
+  letter-spacing: 0;
+  margin-left: 33.0px;
+  min-height: 88px;
+  min-width: 899px;
+  text-align: center;
+}
+
+.ipad-pro-11-1 .line-4-1 {
+  height: 1px;
+  margin-left: 30.0px;
+  margin-top: 53px;
+  width: 297px;
+}
+
+.ipad-pro-11-1 .flex-row-6 {
+  align-items: flex-start;
+  display: flex;
+  height: 476px;
+  margin-right: 6.0px;
+  margin-top: 108px;
+  min-width: 1102px;
+}
+
+.ipad-pro-11-1 .text-62 {
+  letter-spacing: 0;
+  min-height: 476px;
+  min-width: 226px;
+}
+
+.ipad-pro-11-1 .text-63 {
+  letter-spacing: 0;
+  margin-left: 210px;
+  min-height: 476px;
+  min-width: 240px;
+}
+
+.ipad-pro-11-1 .text-64 {
+  letter-spacing: 0;
+  margin-left: 169px;
+  min-height: 442px;
+}
+
+.ipad-pro-11-1 .overlap-group1 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610f8ab2d6e20479a213c9a4/releases/611a1e577a244dff901a5625/img/rectangle-110-1@1x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 604px;
+  justify-content: flex-end;
+  margin-right: 2.0px;
+  margin-top: 182px;
+  min-width: 1280px;
+  padding: 102px 68.3px;
+}
+
+.ipad-pro-11-1 .group-19-1 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 1142px;
+}
+
+.ipad-pro-11-1 .overlap-group2-5 {
+  height: 400px;
+  position: relative;
+  width: 1156px;
+}
+
+.ipad-pro-11-1 .group-16-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 400px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.ipad-pro-11-1 .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.19px;
+  min-height: 382px;
+  width: 501px;
+}
+
+.ipad-pro-11-1 .x1200px-iaest-epng2-1-1 {
+  height: 174px;
+  object-fit: cover;
+  width: 454px;
+}
+
+.ipad-pro-11-1 .flex-row-7 {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  margin-top: 153px;
+  min-width: 471px;
+}
+
+.ipad-pro-11-1 .copyright-2021 {
+  letter-spacing: 0;
+  margin-bottom: 0.37px;
+  min-height: 37px;
+  width: 221px;
+}
+
+.ipad-pro-11-1 .facebook-logo-1 {
+  height: 55px;
+  margin-left: 35px;
+  object-fit: cover;
+  width: 54px;
+}
+
+.ipad-pro-11-1 .flex-row-item {
+  height: 55px;
+  margin-left: 24px;
+  object-fit: cover;
+  width: 55px;
+}
+
+.ipad-pro-11-1 .flex-col-1 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 260px;
+  min-height: 391px;
+  width: 383px;
+}
+
+.ipad-pro-11-1 .come-to-the-office {
+  letter-spacing: 4.52px;
+  min-height: 31px;
+  width: 314px;
+}
+
+.ipad-pro-11-1 .text-65 {
+  letter-spacing: 0;
+  line-height: 28.0px;
+  margin-top: 19px;
+  min-height: 84px;
+  width: 383px;
+}
+
+.ipad-pro-11-1 .directly-call-us {
+  letter-spacing: 4.52px;
+  margin-top: 55px;
+  min-height: 31px;
+  width: 273px;
+}
+
+.ipad-pro-11-1 .phone {
+  letter-spacing: -0.36px;
+  margin-top: 16px;
+  min-height: 24px;
+  width: 161px;
+}
+
+.ipad-pro-11-1 .leave-us-a-mail {
+  letter-spacing: 4.52px;
+  margin-top: 64px;
+  min-height: 31px;
+  width: 254px;
+}
+
+.ipad-pro-11-1 .queriesiaestein {
+  letter-spacing: -0.36px;
+  margin-top: 9px;
+  min-height: 24px;
+  width: 139px;
+}
+
+.ipad-pro-11-1 .image-3 {
+  height: 28px;
+  left: 716px;
+  object-fit: cover;
+  position: absolute;
+  top: 9px;
+  width: 28px;
+}
+
+.ipad-pro-11-1 .image-1 {
+  height: 28px;
+  left: 716px;
+  object-fit: cover;
+  position: absolute;
+  top: 335px;
+  width: 28px;
+}
+
+.ipad-pro-11-1 .image-2 {
+  height: 28px;
+  left: 716px;
+  object-fit: cover;
+  position: absolute;
+  top: 199px;
+  width: 28px;
+}
+.iphone-11-pro-x-3 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 3077px;
+  overflow: hidden;
+  width: 360.05px;
+}
+
+.iphone-11-pro-x-3 .overlap-group-2 {
+  height: 499px;
+  margin-right: 0.3px;
+  position: relative;
+  width: 361px;
+}
+
+.iphone-11-pro-x-3 .x14-6 {
+  height: 499px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+.iphone-11-pro-x-3 .rectangle-114 {
+  height: 498px;
+  left: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 1px;
+  width: 360px;
+}
+
+.iphone-11-pro-x-3 .rectangle-129 {
+  height: 81px;
+  left: 0;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+.iphone-11-pro-x-3 .text-1 {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: 34.9px;
+  font-weight: 700;
+  left: 21px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 190px;
+  width: 261px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.iphone-11-pro-x-3 .text-1.bp2-animate-enter {
+  animation: bp2-animate-enter-frames 0.70s ease-in 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes bp2-animate-enter-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.iphone-11-pro-x-3 .group-1-2 {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610f8ab2d6e20479a213c9a4/releases/611a1e577a244dff901a5625/img/1200px-iaestepng2-1-4@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 39px;
+  left: 24px;
+  position: absolute;
+  top: 25px;
+  width: 126px;
+}
+
+.iphone-11-pro-x-3 .line-22 {
+  height: 6px;
+  left: 21px;
+  position: absolute;
+  top: 385px;
+  width: 141px;
+}
+
+.iphone-11-pro-x-3 .ionmenu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 36px;
+  left: 300px;
+  padding: 9.9px 0;
+  position: absolute;
+  top: 20px;
+  width: 36px;
+}
+
+.iphone-11-pro-x-3 .vector-1 {
+  height: 2px;
+  width: 25px;
+}
+
+.iphone-11-pro-x-3 .vector {
+  height: 2px;
+  margin-top: 5px;
+  width: 25px;
+}
+
+.iphone-11-pro-x-3 .the-board {
+  color: var(--shark);
+  font-family: var(--font-family-montserrat);
+  font-size: 22.2px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-left: 2.0px;
+  margin-top: 28px;
+  min-height: 27px;
+  width: 141px;
+}
+
+.iphone-11-pro-x-3 .line-4 {
+  height: 1px;
+  margin-left: 0;
+  margin-top: 9px;
+  width: 64px;
+}
+
+.iphone-11-pro-x-3 .group-25 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7.87px;
+  margin-top: 19px;
+  min-height: 112px;
+  width: 121px;
+}
+
+.iphone-11-pro-x-3 .chairperson {
+  color: var(--tree-poppy);
+  font-family: var(--font-family-montserrat);
+  font-size: 15.4px;
+  font-weight: 500;
+  letter-spacing: 0;
+  min-height: 19px;
+  width: 121px;
+}
+
+.iphone-11-pro-x-3 .group-15 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.35px;
+  margin-top: 7px;
+  min-height: 86px;
+  width: 67px;
+}
+
+.iphone-11-pro-x-3 .overlap-group2 {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  margin-right: 2.0px;
+  margin-top: -1px;
+  position: relative;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .mask-group {
+  height: 66px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 66px;
+}
+
+.iphone-11-pro-x-3 .ellipse-2 {
+  border: 2.4px solid var(--texas-rose);
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .aadarsh-ashok {
+  letter-spacing: 0;
+  margin-right: 0.2px;
+  margin-top: 8px;
+  min-height: 10px;
+  text-align: center;
+  width: 55px;
+}
+
+.iphone-11-pro-x-3 .group-37 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 0.52px;
+  margin-top: 10px;
+  min-width: 39px;
+}
+
+.iphone-11-pro-x-3 .basic-mail-5 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 10px;
+  padding: 1.5px 0.6px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .basic-mail {
+  height: 6px;
+  width: 8px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-6 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 6px;
+  margin-top: 0.03px;
+  padding: 1.0px 1.1px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand {
+  height: 8px;
+  width: 8px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-3 {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0;
+  margin-left: 4px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-51 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.33px;
+  margin-top: 44px;
+  min-height: 155px;
+  width: 255px;
+}
+
+.iphone-11-pro-x-3 .group-18 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 140px;
+  width: 257px;
+}
+
+.iphone-11-pro-x-3 .team-exchange {
+  color: var(--navy-blue);
+  font-family: var(--font-family-montserrat);
+  font-size: 15.4px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-left: 0.1px;
+  min-height: 19px;
+  width: 142px;
+}
+
+.iphone-11-pro-x-3 .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 106px;
+  margin-left: 2.0px;
+  margin-top: 14px;
+  min-width: 259px;
+}
+
+.iphone-11-pro-x-3 .group-15-1 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 106px;
+  width: 70px;
+}
+
+.iphone-11-pro-x-3 .overlap-group2-1 {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  margin-right: 3.92px;
+  margin-top: -1px;
+  position: relative;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .ellipse {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .sanjeeth-p {
+  letter-spacing: 0;
+  margin-right: 1.82px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 41px;
+}
+
+.iphone-11-pro-x-3 .line-6 {
+  height: 1px;
+  margin-right: 3.91px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-2 {
+  color: var(--navy-blue);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxxxxs);
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 5px;
+  min-height: 10px;
+  text-align: center;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .group-16 {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-top: 0.06px;
+  min-height: 106px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .overlap-group {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  margin-right: 4.0px;
+  margin-top: -1px;
+  position: relative;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .saumya-modi {
+  letter-spacing: 0;
+  margin-right: 2.47px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 49px;
+}
+
+.iphone-11-pro-x-3 .line-7 {
+  height: 1px;
+  margin-right: 4.34px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .national-liaison {
+  letter-spacing: 0;
+  margin-right: 2.19px;
+  margin-top: 5px;
+  min-height: 10px;
+  text-align: center;
+  width: 53px;
+}
+
+.iphone-11-pro-x-3 .group-17 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  min-height: 106px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .vani-mittal {
+  letter-spacing: 0;
+  margin-right: 1.98px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 39px;
+}
+
+.iphone-11-pro-x-3 .line {
+  height: 1px;
+  margin-right: 3.99px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .national-liaison-1 {
+  letter-spacing: 0;
+  margin-right: 6.6px;
+  margin-top: 5px;
+  min-height: 10px;
+  text-align: center;
+  width: 53px;
+}
+
+.iphone-11-pro-x-3 .group-42 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 7.03px;
+  margin-top: 4px;
+  min-width: 230px;
+}
+
+.iphone-11-pro-x-3 .group-36-1 {
+  align-items: flex-end;
+  display: flex;
+  margin-top: 0.03px;
+  min-width: 39px;
+}
+
+.iphone-11-pro-x-3 .basic-mail-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 10px;
+  margin-bottom: 0;
+  padding: 1.3px 0.6px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .basic-mail-2 {
+  height: 7px;
+  width: 8px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in {
+  align-items: flex-start;
+  align-self: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  padding: 0.8px 1.1px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-4 {
+  align-items: flex-end;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-37-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 58px;
+  min-width: 39px;
+}
+
+.iphone-11-pro-x-3 .basic-mail-6 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 10px;
+  padding: 1.3px 0.6px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-7 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 6px;
+  margin-top: 0.03px;
+  padding: 0.8px 1.1px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-5 {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0;
+  margin-left: 4px;
+  padding: 0.8px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-38 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  margin-bottom: 0;
+  margin-left: 54px;
+  min-width: 38px;
+}
+
+.iphone-11-pro-x-3 .basic-mail-3 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 10px;
+  margin-bottom: 0;
+  padding: 1.5px 0.6px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  padding: 0.8px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-6 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-left: 4px;
+  margin-top: 0.27px;
+  padding: 0.8px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-53 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.71px;
+  margin-top: 47px;
+  min-height: 164px;
+  width: 255px;
+}
+
+.iphone-11-pro-x-3 .group-19 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 149px;
+  width: 257px;
+}
+
+.iphone-11-pro-x-3 .team-incoming {
+  color: var(--cinnabar);
+  font-family: var(--font-family-montserrat);
+  font-size: 15.4px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.15px;
+  min-height: 19px;
+  width: 137px;
+}
+
+.iphone-11-pro-x-3 .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 116px;
+  margin-left: 2.0px;
+  margin-top: 14px;
+  min-width: 259px;
+}
+
+.iphone-11-pro-x-3 .group-14 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  min-height: 116px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .aditya-italia {
+  letter-spacing: 0;
+  margin-right: 1.95px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 43px;
+}
+
+.iphone-11-pro-x-3 .line-5 {
+  height: 1px;
+  margin-right: 4.0px;
+  margin-top: 5px;
+  width: 23px;
+}
+
+.iphone-11-pro-x-3 .head-incoming {
+  letter-spacing: 0;
+  margin-right: 2.1px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 52px;
+}
+
+.iphone-11-pro-x-3 .group-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  min-height: 116px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .atharva-uplap {
+  letter-spacing: 0;
+  margin-right: 2.05px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 52px;
+}
+
+.iphone-11-pro-x-3 .line-1 {
+  height: 1px;
+  margin-right: 4.0px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-3 {
+  letter-spacing: 0;
+  margin-right: 2.51px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 41px;
+}
+
+.iphone-11-pro-x-3 .nimisha-modi {
+  letter-spacing: 0;
+  margin-right: 1.99px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 49px;
+}
+
+.iphone-11-pro-x-3 .text-4 {
+  letter-spacing: 0;
+  margin-right: 2.14px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 41px;
+}
+
+.iphone-11-pro-x-3 .group-43 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 7.29px;
+  margin-top: 4px;
+  min-width: 221px;
+}
+
+.iphone-11-pro-x-3 .group-36-2 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 31px;
+}
+
+.iphone-11-pro-x-3 .basic-mail-4 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 10px;
+  margin-bottom: 0;
+  padding: 1.3px 0.6px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 1px;
+  padding: 1.0px 1.1px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-7 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0.04px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-37-2 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  margin-bottom: 0;
+  margin-left: 64px;
+  min-width: 31px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-8 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0.04px;
+  padding: 1.0px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-38-1 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  margin-left: 64px;
+  margin-top: 0;
+  min-width: 31px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-8 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 1px;
+  padding: 1.0px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-9 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0.01px;
+  margin-left: 1px;
+  padding: 1.0px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-54 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.34px;
+  margin-top: 47px;
+  min-height: 165px;
+  width: 258px;
+}
+
+.iphone-11-pro-x-3 .group-21 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 150px;
+  width: 260px;
+}
+
+.iphone-11-pro-x-3 .team-administration {
+  color: var(--puerto-rico);
+  font-family: var(--font-family-montserrat);
+  font-size: 15.4px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.15px;
+  min-height: 19px;
+  width: 193px;
+}
+
+.iphone-11-pro-x-3 .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 116px;
+  margin-left: 2.0px;
+  margin-top: 14px;
+  min-width: 262px;
+}
+
+.iphone-11-pro-x-3 .group-18-1 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 116px;
+  width: 71px;
+}
+
+.iphone-11-pro-x-3 .overlap-group4 {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  margin-right: 4.02px;
+  margin-top: -1px;
+  position: relative;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .pratyusha-m {
+  letter-spacing: 0;
+  margin-right: 2.33px;
+  margin-top: 8px;
+  min-height: 10px;
+  text-align: center;
+  width: 47px;
+}
+
+.iphone-11-pro-x-3 .line-7-1 {
+  height: 1px;
+  margin-right: 4.03px;
+  margin-top: 4px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-7 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .group-17-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 26px;
+  margin-top: 0;
+  min-height: 116px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .name {
+  letter-spacing: 0;
+  margin-right: 2.69px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 30px;
+}
+
+.iphone-11-pro-x-3 .line-7-2 {
+  height: 1px;
+  margin-right: 3.98px;
+  margin-top: 6px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-6 {
+  letter-spacing: 0;
+  margin-right: 2.3px;
+  margin-top: 4px;
+  min-height: 19px;
+  text-align: center;
+  width: 49px;
+}
+
+.iphone-11-pro-x-3 .navya-kriti {
+  letter-spacing: 0;
+  margin-right: 2.58px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 40px;
+}
+
+.iphone-11-pro-x-3 .line-7-3 {
+  height: 1px;
+  margin-right: 3.99px;
+  margin-top: 6px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-5 {
+  letter-spacing: 0;
+  margin-right: 2.31px;
+  margin-top: 4px;
+  min-height: 19px;
+  text-align: center;
+  width: 49px;
+}
+
+.iphone-11-pro-x-3 .group-44 {
+  align-items: flex-end;
+  display: flex;
+  margin-left: 2.12px;
+  margin-top: 4px;
+  min-width: 232px;
+}
+
+.iphone-11-pro-x-3 .group-36-3 {
+  align-items: flex-end;
+  display: flex;
+  min-width: 35px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-9 {
+  align-items: flex-start;
+  align-self: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 4px;
+  padding: 1.0px 1.1px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-10 {
+  align-items: flex-end;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0.17px;
+  margin-left: 1px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-37-3 {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 0;
+  margin-left: 62px;
+  min-width: 36px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  padding: 1.0px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-11 {
+  align-items: flex-end;
+  display: flex;
+  height: 10px;
+  margin-left: 2px;
+  margin-top: 0.21px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-38-2 {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 0;
+  margin-left: 58px;
+  min-width: 40px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-4 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  padding: 1.0px 1.1px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-12 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-left: 6px;
+  margin-top: 0.32px;
+  padding: 1.0px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-56 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 0.13px;
+  margin-top: 54px;
+  min-width: 232px;
+}
+
+.iphone-11-pro-x-3 .overlap-group5 {
+  height: 372px;
+  position: relative;
+  width: 234px;
+}
+
+.iphone-11-pro-x-3 .group-23 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 234px;
+}
+
+.iphone-11-pro-x-3 .text-8 {
+  color: var(--vivid-violet);
+  font-family: var(--font-family-montserrat);
+  font-size: 13.9px;
+  font-weight: 500;
+  letter-spacing: 0;
+  min-height: 34px;
+  text-align: center;
+  width: 234px;
+}
+
+.iphone-11-pro-x-3 .flex-row-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 116px;
+  margin-left: 3.01px;
+  margin-top: 38px;
+  min-width: 172px;
+}
+
+.iphone-11-pro-x-3 .group-1-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 116px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .prateek-jha {
+  letter-spacing: 0;
+  margin-right: 2.96px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 42px;
+}
+
+.iphone-11-pro-x-3 .line-2 {
+  height: 1px;
+  margin-right: 4.01px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .head-bdpr {
+  letter-spacing: 0;
+  margin-right: 2.2px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 42px;
+}
+
+.iphone-11-pro-x-3 .group-15-2 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  min-height: 116px;
+  width: 77px;
+}
+
+.iphone-11-pro-x-3 .overlap-group-1 {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  margin-right: 3.52px;
+  margin-top: -1px;
+  position: relative;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .shantanu-joshi {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 54px;
+}
+
+.iphone-11-pro-x-3 .line-6-1 {
+  height: 1px;
+  margin-right: 3.52px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-9 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 75px;
+}
+
+.iphone-11-pro-x-3 .flex-row-4 {
+  align-items: flex-start;
+  display: flex;
+  height: 116px;
+  margin-left: 1.9px;
+  margin-top: 53px;
+  min-width: 162px;
+}
+
+.iphone-11-pro-x-3 .aryan-mukund {
+  letter-spacing: 0;
+  margin-right: 2.3px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 53px;
+}
+
+.iphone-11-pro-x-3 .text-10 {
+  letter-spacing: 0;
+  margin-right: 2.48px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 65px;
+}
+
+.iphone-11-pro-x-3 .group-29 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  min-height: 116px;
+  width: 67px;
+}
+
+.iphone-11-pro-x-3 .group-17-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 91px;
+  width: 67px;
+}
+
+.iphone-11-pro-x-3 .shrimanti-pal {
+  letter-spacing: 0;
+  margin-right: 0.25px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 48px;
+}
+
+.iphone-11-pro-x-3 .line-8 {
+  height: 1px;
+  margin-right: 1.63px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-11 {
+  letter-spacing: 0;
+  margin-left: 3.08px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 61px;
+}
+
+.iphone-11-pro-x-3 .group-55 {
+  align-items: flex-start;
+  display: flex;
+  height: 179px;
+  left: 46px;
+  position: absolute;
+  top: 193px;
+}
+
+.iphone-11-pro-x-3 .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  min-height: 179px;
+  width: 40px;
+}
+
+.iphone-11-pro-x-3 .group-3 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 39px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 0.28px;
+  padding: 0.8px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-38-3 {
+  align-items: flex-end;
+  display: flex;
+  margin-left: 4.19px;
+  margin-top: 158px;
+  min-width: 36px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-13 {
+  align-items: flex-end;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0.11px;
+  margin-left: 2px;
+  padding: 1.0px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 58px;
+  min-height: 179px;
+  width: 39px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-5 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  padding: 0.8px 1.1px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-47 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 0.18px;
+  margin-top: 158px;
+  min-width: 39px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-14 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 0.28px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-58 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 21.94px;
+  margin-top: 53px;
+  min-height: 144px;
+  width: 160px;
+}
+
+.iphone-11-pro-x-3 .group-24 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 129px;
+  width: 162px;
+}
+
+.iphone-11-pro-x-3 .team-finance {
+  color: var(--chateau-green-2);
+  font-family: var(--font-family-montserrat);
+  font-size: 15.4px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.16px;
+  min-height: 19px;
+  width: 124px;
+}
+
+.iphone-11-pro-x-3 .flex-row-5 {
+  align-items: flex-start;
+  display: flex;
+  height: 101px;
+  margin-left: 2.0px;
+  margin-top: 9px;
+  min-width: 164px;
+}
+
+.iphone-11-pro-x-3 .group-15-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  min-height: 100px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .saharsh-barve {
+  letter-spacing: 0;
+  margin-right: 2.46px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 53px;
+}
+
+.iphone-11-pro-x-3 .line-3 {
+  height: 1px;
+  margin-right: 4.0px;
+  margin-top: 2px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .head-finance {
+  letter-spacing: 0;
+  margin-right: 2.19px;
+  margin-top: 2px;
+  min-height: 10px;
+  text-align: center;
+  width: 50px;
+}
+
+.iphone-11-pro-x-3 .group-17-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  min-height: 101px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .shreya-sharma {
+  letter-spacing: 0;
+  margin-right: 2.29px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 55px;
+}
+
+.iphone-11-pro-x-3 .finance-in-charge {
+  letter-spacing: 0;
+  margin-right: 2.01px;
+  margin-top: 3px;
+  min-height: 10px;
+  text-align: center;
+  width: 61px;
+}
+
+.iphone-11-pro-x-3 .group-57 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 7.63px;
+  margin-top: 4px;
+  min-width: 126px;
+}
+
+.iphone-11-pro-x-3 .group-48 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  margin-bottom: 0;
+  min-width: 39px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-10 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 4px;
+  padding: 0.8px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-15 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 0.2px;
+  padding: 0.8px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-49 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 55px;
+  min-width: 31px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-11 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 1px;
+  padding: 0.8px 0.8px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-16 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-bottom: 0.01px;
+  margin-left: 1px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-60 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4.72px;
+  margin-top: 45px;
+  min-height: 329px;
+  width: 269px;
+}
+
+.iphone-11-pro-x-3 .group-30 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 164px;
+  width: 271px;
+}
+
+.iphone-11-pro-x-3 .text-12 {
+  color: var(--razzmatazz);
+  font-family: var(--font-family-montserrat);
+  font-size: 13.9px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.16px;
+  min-height: 34px;
+  text-align: center;
+  width: 191px;
+}
+
+.iphone-11-pro-x-3 .flex-row-6 {
+  align-items: flex-start;
+  display: flex;
+  height: 116px;
+  margin-left: 2.0px;
+  margin-top: 13px;
+  min-width: 273px;
+}
+
+.iphone-11-pro-x-3 .group-14-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  min-height: 116px;
+  width: 93px;
+}
+
+.iphone-11-pro-x-3 .overlap-group2-2 {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  margin-left: 1.33px;
+  margin-top: -1px;
+  position: relative;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .siddharth-shah {
+  letter-spacing: 0;
+  margin-left: 2.88px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 56px;
+}
+
+.iphone-11-pro-x-3 .line-5-1 {
+  height: 1px;
+  margin-right: 4.14px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-13 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 91px;
+}
+
+.iphone-11-pro-x-3 .group-15-4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  min-height: 116px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .parikalp-singh {
+  letter-spacing: 0;
+  margin-right: 1.87px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 52px;
+}
+
+.iphone-11-pro-x-3 .text-14 {
+  letter-spacing: 0;
+  margin-right: 2.2px;
+  margin-top: 5px;
+  min-height: 19px;
+  text-align: center;
+  width: 60px;
+}
+
+.iphone-11-pro-x-3 .group-17-4 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  min-height: 116px;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .nandini-dixit {
+  letter-spacing: 0;
+  margin-right: 2.35px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 47px;
+}
+
+.iphone-11-pro-x-3 .text-15 {
+  letter-spacing: 0;
+  margin-right: 1.73px;
+  margin-top: 6px;
+  min-height: 19px;
+  text-align: center;
+  width: 60px;
+}
+
+.iphone-11-pro-x-3 .group-45 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 10.93px;
+  margin-top: 3px;
+  min-width: 231px;
+}
+
+.iphone-11-pro-x-3 .group-36 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 38px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-1 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-left: 4px;
+  margin-top: 0.25px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-37-4 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  margin-bottom: 0;
+  margin-left: 59px;
+  min-width: 38px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-17 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-left: 4px;
+  margin-top: 0.26px;
+  padding: 1.0px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-3-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 56px;
+  margin-top: 0;
+  min-width: 38px;
+}
+
+.iphone-11-pro-x-3 .group-59 {
+  height: 123px;
+  margin-left: 9.59px;
+  margin-top: 28px;
+  position: relative;
+  width: 259px;
+}
+
+.iphone-11-pro-x-3 .group-15-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 74px;
+}
+
+.iphone-11-pro-x-3 .overlap-group2-3 {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  margin-right: 5.78px;
+  margin-top: -1px;
+  position: relative;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .mask-group-1 {
+  height: 66px;
+  left: 2px;
+  position: absolute;
+  top: 1px;
+  width: 66px;
+}
+
+.iphone-11-pro-x-3 .prabhat-namdharini {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 72px;
+}
+
+.iphone-11-pro-x-3 .line-6-2 {
+  height: 1px;
+  margin-right: 5.78px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .data-analyst {
+  letter-spacing: 0;
+  margin-right: 3.98px;
+  margin-top: 6px;
+  min-height: 10px;
+  text-align: center;
+  width: 43px;
+}
+
+.iphone-11-pro-x-3 .overlap-group5-1 {
+  height: 123px;
+  left: 15px;
+  position: absolute;
+  top: 0;
+  width: 248px;
+}
+
+.iphone-11-pro-x-3 .group-18-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 174px;
+  position: absolute;
+  top: 0;
+  width: 74px;
+}
+
+.iphone-11-pro-x-3 .sai-rohit {
+  letter-spacing: 0;
+  margin-right: 1.65px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 33px;
+}
+
+.iphone-11-pro-x-3 .line-6-3 {
+  height: 1px;
+  margin-right: 3.51px;
+  margin-top: 5px;
+  width: 22px;
+}
+
+.iphone-11-pro-x-3 .text-16 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 6px;
+  min-height: 19px;
+  text-align: center;
+  width: 72px;
+}
+
+.iphone-11-pro-x-3 .group-46 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 112px;
+}
+
+.iphone-11-pro-x-3 .brand-linked-in-12 {
+  align-items: flex-start;
+  display: flex;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 0;
+  padding: 1.0px 1.1px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .brand-instagram-2 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 10px;
+  margin-left: 4px;
+  margin-top: 0.25px;
+  padding: 0.8px 1.0px;
+  width: 10px;
+}
+
+.iphone-11-pro-x-3 .group-17-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 97px;
+  position: absolute;
+  top: 0;
+  width: 69px;
+}
+
+.iphone-11-pro-x-3 .overlap-group3 {
+  border-radius: 33.88px/33.78px;
+  height: 68px;
+  margin-right: 4.01px;
+  margin-top: -1px;
+  position: relative;
+  width: 68px;
+}
+
+.iphone-11-pro-x-3 .sanya-gupta {
+  letter-spacing: 0;
+  margin-right: 2.68px;
+  margin-top: 7px;
+  min-height: 10px;
+  text-align: center;
+  width: 47px;
+}
+
+.iphone-11-pro-x-3 .it-manager {
+  letter-spacing: 0;
+  margin-right: 1.74px;
+  margin-top: 6px;
+  min-height: 10px;
+  text-align: center;
+  width: 38px;
+}
+
+.iphone-11-pro-x-3 .group-31 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16.35px;
+  margin-top: 46px;
+  min-height: 259px;
+  width: 251px;
+}
+
+.iphone-11-pro-x-3 .the-local-committee {
+  color: var(--shark);
+  font-family: var(--font-family-montserrat);
+  font-size: 16.2px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-right: 4.0px;
+  min-height: 20px;
+  text-align: center;
+  width: 247px;
+}
+
+.iphone-11-pro-x-3 .line-4-1 {
+  height: 1px;
+  margin-right: 6.27px;
+  margin-top: 11px;
+  width: 82px;
+}
+
+.iphone-11-pro-x-3 .flex-row-7 {
+  align-items: flex-start;
+  display: flex;
+  height: 204px;
+  margin-left: 13.29px;
+  margin-top: 23px;
+  min-width: 210px;
+}
+
+.iphone-11-pro-x-3 .text-17 {
+  align-self: flex-end;
+  letter-spacing: 0;
+  min-height: 203px;
+  width: 83px;
+}
+
+.iphone-11-pro-x-3 .text-18 {
+  letter-spacing: 0;
+  margin-left: 31px;
+  min-height: 201px;
+  width: 95px;
+}
+
+.iphone-11-pro-x-3 .overlap-group1 {
+  align-items: flex-end;
+  background-color: var(--black-haze);
+  display: flex;
+  flex-direction: column;
+  margin-right: 4.83px;
+  margin-top: 45px;
+  min-height: 386px;
+  padding: 15.1px 85.5px;
+  width: 364px;
+}
+
+.iphone-11-pro-x-3 .group-123 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+  min-height: 299px;
+  width: 177px;
+}
+
+.iphone-11-pro-x-3 .reach-out-to-us {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: 21.4px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-left: 0;
+  min-height: 26px;
+  width: 176px;
+}
+
+.iphone-11-pro-x-3 .group-107 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  height: 23px;
+  margin-right: 2.45px;
+  margin-top: 27px;
+  min-width: 123px;
+}
+
+.iphone-11-pro-x-3 .facebook-logo-1 {
+  height: 24px;
+  margin-top: -0.34px;
+  object-fit: cover;
+  width: 24px;
+}
+
+.iphone-11-pro-x-3 .group-107-item {
+  height: 24px;
+  margin-left: 25px;
+  margin-top: -0.34px;
+  object-fit: cover;
+  width: 24px;
+}
+
+.iphone-11-pro-x-3 .group-108 {
+  align-items: flex-start;
+  display: flex;
+  height: 188px;
+  margin-top: 33px;
+  min-width: 187px;
+}
+
+.iphone-11-pro-x-3 .flex-col-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2px;
+  min-height: 174px;
+  width: 19px;
+}
+
+.iphone-11-pro-x-3 .image-3 {
+  height: 19px;
+  object-fit: cover;
+  width: 18px;
+}
+
+.iphone-11-pro-x-3 .image-2 {
+  height: 17px;
+  margin-left: 1.58px;
+  margin-top: 81px;
+  object-fit: cover;
+  width: 17px;
+}
+
+.iphone-11-pro-x-3 .image-1 {
+  height: 17px;
+  margin-left: 1.58px;
+  margin-top: 38px;
+  object-fit: cover;
+  width: 17px;
+}
+
+.iphone-11-pro-x-3 .flex-col-3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  min-height: 188px;
+  width: 150px;
+}
+
+.iphone-11-pro-x-3 .come-to-the-office {
+  letter-spacing: 2.14px;
+  min-height: 14px;
+  width: 150px;
+}
+
+.iphone-11-pro-x-3 .text-20 {
+  letter-spacing: 0;
+  line-height: 14.0px;
+  margin-left: 0.43px;
+  margin-top: 8px;
+  min-height: 56px;
+  width: 144px;
+}
+
+.iphone-11-pro-x-3 .directly-call-us {
+  letter-spacing: 2.14px;
+  margin-top: 20px;
+  min-height: 15px;
+  width: 130px;
+}
+
+.iphone-11-pro-x-3 .phone {
+  letter-spacing: -0.18px;
+  margin-top: 4px;
+  min-height: 12px;
+  width: 82px;
+}
+
+.iphone-11-pro-x-3 .leave-us-a-mail {
+  letter-spacing: 2.14px;
+  margin-top: 23px;
+  min-height: 15px;
+  width: 121px;
+}
+
+.iphone-11-pro-x-3 .queriesiaestein {
+  letter-spacing: -0.18px;
+  margin-top: 5px;
+  min-height: 12px;
+  width: 70px;
+}
+
+.iphone-11-pro-x-3 .text-19 {
+  align-self: center;
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: 8.9px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-left: 6.37px;
+  margin-top: 38px;
+  min-height: 12px;
+  text-align: center;
+  width: 153px;
+}
+
+.iphone-11-pro-x-3 .rectangle-130 {
+  height: 1px;
+  margin-left: 123.47px;
+  margin-top: 304px;
+  mix-blend-mode: multiply;
+  width: 1px;
+}
+.laptop {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 8245px;
+  overflow: hidden;
+  width: 1920px;
+}
+
+.laptop .overlap-group-1 {
+  height: 1081px;
+  margin-left: 0.5px;
+  position: relative;
+  width: 1920px;
+}
+
+.laptop .x14-6 {
+  height: 1080px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.laptop .rectangle-129 {
+  height: 194px;
+  left: 0;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.laptop .rectangle-278 {
+  height: 1081px;
+  left: 2px;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  width: 1919px;
+}
+
+.laptop .group-1-1 {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  left: 125px;
+  position: absolute;
+  top: 57px;
+}
+
+.laptop .x1200px-iaest-epng2-1 {
+  height: 80px;
+  object-fit: cover;
+  width: 209px;
+}
+
+.laptop .place {
+  letter-spacing: 0;
+  margin-left: 913px;
+  margin-top: 0;
+  min-height: 22px;
+  width: 53px;
+}
+
+.laptop .incoming {
+  letter-spacing: 0;
+  margin-left: 32px;
+  margin-top: 0;
+  min-height: 22px;
+  width: 81px;
+}
+
+.laptop .outgoing {
+  letter-spacing: 0;
+  margin-left: 30px;
+  margin-top: 0;
+  min-height: 22px;
+  width: 80px;
+}
+
+.laptop .member {
+  letter-spacing: 0;
+  margin-left: 30px;
+  margin-top: 0;
+  min-height: 22px;
+  width: 73px;
+}
+
+.laptop .corporate {
+  letter-spacing: 0;
+  margin-left: 30px;
+  margin-top: 0;
+  min-height: 22px;
+  width: 86px;
+}
+
+.laptop .team {
+  letter-spacing: 0;
+  margin-left: 30px;
+  margin-top: 0;
+  min-height: 22px;
+  width: 50px;
+}
+
+.laptop .text-40 {
+  left: 46px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 425px;
+  width: 1203px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.laptop .text-40.bp3-animate-enter {
+  animation: bp3-animate-enter-frames 0.70s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes bp3-animate-enter-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.laptop .line-22 {
+  height: 12px;
+  left: 58px;
+  position: absolute;
+  top: 702px;
+  width: 760px;
+}
+
+.laptop .the-board {
+  letter-spacing: 0;
+  margin-left: 3.0px;
+  margin-top: 164px;
+  min-height: 88px;
+  min-width: 453px;
+}
+
+.laptop .line-4 {
+  height: 2px;
+  margin-left: 0.78px;
+  margin-top: 30px;
+  width: 206px;
+}
+
+.laptop .group-52 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.0px;
+  margin-top: 81px;
+  min-height: 418px;
+  width: 385px;
+}
+
+.laptop .group-25 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 366px;
+  width: 387px;
+}
+
+.laptop .chairperson {
+  letter-spacing: 0;
+  min-height: 61px;
+  min-width: 387px;
+}
+
+.laptop .group-15 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.54px;
+  margin-top: 27px;
+  min-height: 278px;
+  width: 214px;
+}
+
+.laptop .overlap-group2 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 2.0px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.laptop .mask-group {
+  height: 212px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 212px;
+}
+
+.laptop .ellipse {
+  border-radius: 109.64px;
+  height: 219px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 219px;
+}
+
+.laptop .aadarsh-ashok {
+  letter-spacing: 0;
+  margin-right: 0.67px;
+  margin-top: 28px;
+  min-height: 34px;
+  min-width: 174px;
+  text-align: center;
+}
+
+.laptop .group-50 {
+  align-items: flex-start;
+  display: flex;
+  height: 37px;
+  margin-left: 0.22px;
+  margin-top: 14px;
+  min-width: 129px;
+}
+
+.laptop .basic-mail-4 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 34px;
+  margin-bottom: 0;
+  padding: 5.2px 2.5px;
+  width: 34px;
+}
+
+.laptop .basic-mail-5 {
+  height: 24px;
+  width: 29px;
+}
+
+.laptop .brand-linked-in-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 13px;
+  padding: 4.0px 4.0px;
+  width: 34px;
+}
+
+.laptop .brand {
+  height: 26px;
+  width: 26px;
+}
+
+.laptop .brand-instagram-2 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 34px;
+  margin-left: 13px;
+  margin-top: 0.92px;
+  padding: 3.9px 3.9px;
+  width: 34px;
+}
+
+.laptop .group-51 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.34px;
+  margin-top: 150px;
+  min-height: 502px;
+  width: 827px;
+}
+
+.laptop .group-18 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 453px;
+  width: 829px;
+}
+
+.laptop .team-exchange {
+  letter-spacing: 0;
+  margin-left: 0.34px;
+  min-height: 61px;
+  min-width: 455px;
+}
+
+.laptop .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 344px;
+  margin-left: 2.0px;
+  margin-top: 47px;
+  min-width: 831px;
+}
+
+.laptop .group-15-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 344px;
+  width: 217px;
+}
+
+.laptop .overlap-group2-1 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 3.7px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.laptop .sanjeeth-p {
+  letter-spacing: 0;
+  margin-right: 1.37px;
+  margin-top: 25px;
+  min-height: 34px;
+  min-width: 127px;
+  text-align: center;
+}
+
+.laptop .line-6 {
+  height: 2px;
+  margin-right: 3.7px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.laptop .text-25 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 17px;
+  min-height: 31px;
+  text-align: center;
+  width: 215px;
+}
+
+.laptop .group-16 {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  margin-top: 0.18px;
+  min-height: 343px;
+  width: 216px;
+}
+
+.laptop .overlap-group {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 4.0px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.laptop .saumya-modi {
+  letter-spacing: 0;
+  margin-right: 3.55px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 154px;
+  text-align: center;
+}
+
+.laptop .line-7-1 {
+  height: 2px;
+  margin-right: 5.11px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.laptop .national-liaison {
+  letter-spacing: 0;
+  margin-right: 2.66px;
+  margin-top: 16px;
+  min-height: 31px;
+  text-align: center;
+  width: 167px;
+}
+
+.laptop .group-17 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 344px;
+  width: 216px;
+}
+
+.laptop .vani-mittal {
+  letter-spacing: 0;
+  margin-right: 1.97px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 121px;
+  text-align: center;
+}
+
+.laptop .line {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 19px;
+  width: 72px;
+}
+
+.laptop .national-liaison-1 {
+  letter-spacing: 0;
+  margin-right: 16.91px;
+  margin-top: 17px;
+  min-height: 31px;
+  text-align: center;
+  width: 167px;
+}
+
+.laptop .group-42 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 7.27px;
+  margin-top: 14px;
+  min-width: 733px;
+}
+
+.laptop .group-36 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 34px;
+  margin-bottom: 0;
+  min-width: 126px;
+}
+
+.laptop .basic-mail {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 31px;
+  margin-bottom: 0;
+  padding: 5.0px 2.5px;
+  width: 31px;
+}
+
+.laptop .basic-mail-1 {
+  height: 21px;
+  width: 26px;
+}
+
+.laptop .brand-linked-in {
+  align-items: flex-start;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  padding: 3.8px 3.8px;
+  width: 31px;
+}
+
+.laptop .brand-1 {
+  height: 24px;
+  width: 24px;
+}
+
+.laptop .brand-instagram {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  margin-top: 0.92px;
+  padding: 3.5px 3.5px;
+  width: 31px;
+}
+
+.laptop .group-37 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 181px;
+  min-width: 126px;
+}
+
+.laptop .group-38 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 172px;
+  min-width: 126px;
+}
+
+.laptop .group-53 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.54px;
+  margin-top: 150px;
+  min-height: 533px;
+  width: 826px;
+}
+
+.laptop .group-19 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 485px;
+  width: 828px;
+}
+
+.laptop .team-incoming {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 61px;
+  min-width: 439px;
+}
+
+.laptop .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 376px;
+  margin-left: 2.0px;
+  margin-top: 47px;
+  min-width: 830px;
+}
+
+.laptop .group-14 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 375px;
+  width: 216px;
+}
+
+.laptop .aditya-italia {
+  letter-spacing: 0;
+  margin-right: 1.9px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 135px;
+  text-align: center;
+}
+
+.laptop .head-incoming {
+  letter-spacing: 0;
+  margin-right: 2.35px;
+  margin-top: 17px;
+  min-height: 62px;
+  text-align: center;
+  width: 163px;
+}
+
+.laptop .group-15-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  margin-top: 0;
+  min-height: 376px;
+  width: 216px;
+}
+
+.laptop .atharva-uplap {
+  letter-spacing: 0;
+  margin-right: 2.16px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 165px;
+  text-align: center;
+}
+
+.laptop .text-26 {
+  letter-spacing: 0;
+  margin-right: 3.67px;
+  margin-top: 17px;
+  min-height: 63px;
+  text-align: center;
+  width: 129px;
+}
+
+.laptop .group-16-1 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 376px;
+  width: 216px;
+}
+
+.laptop .nimisha-modi {
+  letter-spacing: 0;
+  margin-right: 1.97px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 155px;
+  text-align: center;
+}
+
+.laptop .text-27 {
+  letter-spacing: 0;
+  margin-right: 2.48px;
+  margin-top: 17px;
+  min-height: 63px;
+  text-align: center;
+  width: 129px;
+}
+
+.laptop .group-43 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 0.85px;
+  margin-top: 14px;
+  min-width: 740px;
+}
+
+.laptop .group-36-1 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 34px;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  min-width: 126px;
+}
+
+.laptop .basic-mail-2 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 31px;
+  margin-bottom: 0;
+  padding: 4.8px 2.5px;
+  width: 31px;
+}
+
+.laptop .basic-mail-3 {
+  height: 22px;
+  width: 26px;
+}
+
+.laptop .brand-linked-in-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  margin-top: 0;
+  padding: 3.5px 3.8px;
+  width: 31px;
+}
+
+.laptop .group-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 180px;
+  min-width: 126px;
+}
+
+.laptop .group-38-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  justify-content: flex-end;
+  margin-left: 180px;
+  min-width: 126px;
+}
+
+.laptop .group-54 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.46px;
+  margin-top: 150px;
+  min-height: 535px;
+  width: 836px;
+}
+
+.laptop .group-21 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 487px;
+  width: 838px;
+}
+
+.laptop .team-administration {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 61px;
+  min-width: 619px;
+}
+
+.laptop .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 378px;
+  margin-left: 2.0px;
+  margin-top: 47px;
+  min-width: 840px;
+}
+
+.laptop .group-18-1 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 375px;
+  width: 222px;
+}
+
+.laptop .overlap-group4 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 4.09px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.laptop .mask-group-1 {
+  height: 212px;
+  left: 4px;
+  position: absolute;
+  top: 6px;
+  width: 212px;
+}
+
+.laptop .pratyusha-m {
+  letter-spacing: 0;
+  margin-right: 3.06px;
+  margin-top: 27px;
+  min-height: 34px;
+  min-width: 148px;
+  text-align: center;
+}
+
+.laptop .line-7-2 {
+  height: 2px;
+  margin-right: 4.09px;
+  margin-top: 16px;
+  width: 72px;
+}
+
+.laptop .text-30 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 18px;
+  min-height: 62px;
+  text-align: center;
+  width: 220px;
+}
+
+.laptop .group-17-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 94px;
+  margin-top: 0;
+  min-height: 376px;
+  width: 216px;
+}
+
+.laptop .name {
+  letter-spacing: 0;
+  margin-right: 4.28px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 94px;
+  text-align: center;
+}
+
+.laptop .line-7 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 21px;
+  width: 72px;
+}
+
+.laptop .text-2 {
+  letter-spacing: 0;
+  margin-right: 3.01px;
+  margin-top: 15px;
+  min-height: 63px;
+  text-align: center;
+  width: 154px;
+}
+
+.laptop .group-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 376px;
+  width: 216px;
+}
+
+.laptop .navya-kriti {
+  letter-spacing: 0;
+  margin-right: 3.91px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 124px;
+  text-align: center;
+}
+
+.laptop .group-44 {
+  align-items: flex-end;
+  display: flex;
+  margin-left: 2.85px;
+  margin-top: 14px;
+  min-width: 746px;
+}
+
+.laptop .group-36-2 {
+  align-items: flex-start;
+  align-self: flex-start;
+  display: flex;
+  height: 34px;
+  min-width: 126px;
+}
+
+.laptop .brand-linked-in-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  padding: 3.5px 3.8px;
+  width: 31px;
+}
+
+.laptop .group-37-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-bottom: 0;
+  margin-left: 187px;
+  min-width: 126px;
+}
+
+.laptop .group-38-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-bottom: 0;
+  margin-left: 179px;
+  min-width: 126px;
+}
+
+.laptop .group-56 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.46px;
+  margin-top: 150px;
+  min-height: 576px;
+  width: 1157px;
+}
+
+.laptop .group-23 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 528px;
+  width: 1159px;
+}
+
+.laptop .text-31 {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 110px;
+  min-width: 754px;
+  text-align: center;
+}
+
+.laptop .flex-row-3 {
+  align-items: flex-end;
+  display: flex;
+  height: 376px;
+  margin-right: 0;
+  margin-top: 42px;
+  min-width: 1159px;
+}
+
+.laptop .group-14-1 {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 375px;
+  width: 216px;
+}
+
+.laptop .prateek-jha {
+  letter-spacing: 0;
+  margin-right: 5.12px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 130px;
+  text-align: center;
+}
+
+.laptop .line-1 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.laptop .head-bdpr {
+  letter-spacing: 0;
+  margin-right: 2.66px;
+  margin-top: 17px;
+  min-height: 62px;
+  text-align: center;
+  width: 132px;
+}
+
+.laptop .group-15-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 91px;
+  min-height: 376px;
+  padding: 0 0.0px;
+  width: 240px;
+}
+
+.laptop .overlap-group3 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 2.42px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.laptop .shantanu-joshi {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 170px;
+  text-align: center;
+}
+
+.laptop .line-6-1 {
+  height: 2px;
+  margin-right: 2.43px;
+  margin-top: 19px;
+  width: 72px;
+}
+
+.laptop .text-32 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 17px;
+  min-height: 63px;
+  text-align: center;
+  width: 238px;
+}
+
+.laptop .aryan-mukund {
+  letter-spacing: 0;
+  margin-right: 2.98px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 167px;
+  text-align: center;
+}
+
+.laptop .text-33 {
+  letter-spacing: 0;
+  margin-right: 3.59px;
+  margin-top: 17px;
+  min-height: 63px;
+  text-align: center;
+  width: 206px;
+}
+
+.laptop .group-29 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 376px;
+  width: 214px;
+}
+
+.laptop .group-17-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 294px;
+  width: 214px;
+}
+
+.laptop .shrimanti-pal {
+  letter-spacing: 0;
+  margin-right: 0.86px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 151px;
+  text-align: center;
+}
+
+.laptop .line-8 {
+  height: 2px;
+  margin-right: 0.84px;
+  margin-top: 19px;
+  width: 72px;
+}
+
+.laptop .text-34 {
+  letter-spacing: 0;
+  margin-left: 0.84px;
+  margin-top: 18px;
+  min-height: 63px;
+  text-align: center;
+  width: 195px;
+}
+
+.laptop .group-55 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 0.15px;
+  margin-top: 14px;
+  min-width: 1070px;
+}
+
+.laptop .group {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  min-width: 126px;
+}
+
+.laptop .group-3-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 192px;
+  min-width: 126px;
+}
+
+.laptop .group-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 179px;
+  min-width: 126px;
+}
+
+.laptop .group-58 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.54px;
+  margin-top: 150px;
+  min-height: 468px;
+  width: 519px;
+}
+
+.laptop .group-24 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 419px;
+  width: 521px;
+}
+
+.laptop .team-finance {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 61px;
+  min-width: 398px;
+}
+
+.laptop .flex-row-4 {
+  align-items: flex-start;
+  display: flex;
+  height: 327px;
+  margin-left: 2.0px;
+  margin-top: 31px;
+  min-width: 523px;
+}
+
+.laptop .group-15-4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 324px;
+  width: 216px;
+}
+
+.laptop .saharsh-barve {
+  letter-spacing: 0;
+  margin-right: 3.53px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 166px;
+  text-align: center;
+}
+
+.laptop .line-2 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 8px;
+  width: 72px;
+}
+
+.laptop .head-finance {
+  letter-spacing: 0;
+  margin-right: 2.65px;
+  margin-top: 8px;
+  min-height: 31px;
+  text-align: center;
+  width: 156px;
+}
+
+.laptop .group-17-3 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 327px;
+  width: 216px;
+}
+
+.laptop .shreya-sharma {
+  letter-spacing: 0;
+  margin-right: 2.97px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 172px;
+  text-align: center;
+}
+
+.laptop .finance-in-charge {
+  letter-spacing: 0;
+  margin-right: 2.07px;
+  margin-top: 10px;
+  min-height: 31px;
+  text-align: center;
+  width: 192px;
+}
+
+.laptop .group-57 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 0.15px;
+  margin-top: 14px;
+  min-width: 432px;
+}
+
+.laptop .group-60 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 37.41px;
+  margin-top: 151px;
+  min-height: 1068px;
+  width: 877px;
+}
+
+.laptop .group-30 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3.05px;
+  min-height: 531px;
+  width: 874px;
+}
+
+.laptop .text-35 {
+  letter-spacing: 0;
+  margin-right: 0.54px;
+  min-height: 110px;
+  min-width: 613px;
+  text-align: center;
+}
+
+.laptop .flex-row-5 {
+  align-items: flex-start;
+  display: flex;
+  height: 378px;
+  margin-left: 2.0px;
+  margin-top: 42px;
+  min-width: 876px;
+}
+
+.laptop .group-14-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  min-height: 376px;
+  width: 290px;
+}
+
+.laptop .overlap-group2-2 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-left: 13.23px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.laptop .siddharth-shah {
+  letter-spacing: 0;
+  margin-left: 13.78px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 176px;
+  text-align: center;
+}
+
+.laptop .line-5 {
+  height: 2px;
+  margin-right: 4.45px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.laptop .text-36 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 18px;
+  min-height: 63px;
+  text-align: center;
+  width: 288px;
+}
+
+.laptop .group-15-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 62px;
+  margin-top: 0;
+  min-height: 376px;
+  width: 216px;
+}
+
+.laptop .parikalp-singh {
+  letter-spacing: 0;
+  margin-right: 1.59px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 163px;
+  text-align: center;
+}
+
+.laptop .text-37 {
+  letter-spacing: 0;
+  margin-right: 2.66px;
+  margin-top: 18px;
+  min-height: 63px;
+  text-align: center;
+  width: 191px;
+}
+
+.laptop .group-17-4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 91px;
+  min-height: 378px;
+  width: 216px;
+}
+
+.laptop .nandini-dixit {
+  letter-spacing: 0;
+  margin-right: 3.18px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 147px;
+  text-align: center;
+}
+
+.laptop .text-38 {
+  letter-spacing: 0;
+  margin-right: 1.15px;
+  margin-top: 20px;
+  min-height: 63px;
+  text-align: center;
+  width: 191px;
+}
+
+.laptop .group-45 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  margin-left: 32.8px;
+  margin-top: 12px;
+  min-width: 749px;
+}
+
+.laptop .group-37-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  margin-left: 189px;
+  min-width: 126px;
+}
+
+.laptop .group-59 {
+  height: 398px;
+  margin-top: 93px;
+  position: relative;
+  width: 839px;
+}
+
+.laptop .group-15-6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 229px;
+}
+
+.laptop .overlap-group2-3 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 9.76px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.laptop .mask-group-2 {
+  height: 212px;
+  left: 6px;
+  position: absolute;
+  top: 4px;
+  width: 212px;
+}
+
+.laptop .prabhat-namdharini {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 227px;
+  text-align: center;
+}
+
+.laptop .line-6-2 {
+  height: 2px;
+  margin-right: 9.76px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.laptop .data-analyst {
+  letter-spacing: 0;
+  margin-right: 8.41px;
+  margin-top: 20px;
+  min-height: 31px;
+  text-align: center;
+  width: 136px;
+}
+
+.laptop .overlap-group5 {
+  height: 398px;
+  left: 50px;
+  position: absolute;
+  top: 0;
+  width: 793px;
+}
+
+.laptop .group-18-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 562px;
+  position: absolute;
+  top: 0;
+  width: 231px;
+}
+
+.laptop .overlap-group2-4 {
+  border-radius: 109.64px;
+  height: 219px;
+  margin-right: 2.41px;
+  margin-top: -3px;
+  position: relative;
+  width: 219px;
+}
+
+.laptop .sai-rohit {
+  letter-spacing: 0;
+  margin-right: 0.88px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 103px;
+  text-align: center;
+}
+
+.laptop .line-6-3 {
+  height: 2px;
+  margin-right: 2.41px;
+  margin-top: 18px;
+  width: 72px;
+}
+
+.laptop .text-39 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 20px;
+  min-height: 63px;
+  text-align: center;
+  width: 229px;
+}
+
+.laptop .group-46 {
+  align-items: flex-start;
+  display: flex;
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 364px;
+}
+
+.laptop .brand-instagram-1 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 31px;
+  margin-left: 16px;
+  margin-top: 0.92px;
+  padding: 3.8px 3.5px;
+  width: 31px;
+}
+
+.laptop .group-17-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 314px;
+  position: absolute;
+  top: 0;
+  width: 216px;
+}
+
+.laptop .sanya-gupta {
+  letter-spacing: 0;
+  margin-right: 4.18px;
+  margin-top: 24px;
+  min-height: 34px;
+  min-width: 146px;
+  text-align: center;
+}
+
+.laptop .it-manager {
+  letter-spacing: 0;
+  margin-right: 1.15px;
+  margin-top: 22px;
+  min-height: 31px;
+  text-align: center;
+  width: 119px;
+}
+
+.laptop .group-31 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8.0px;
+  margin-top: 281px;
+  min-height: 727px;
+  width: 1108px;
+}
+
+.laptop .the-local-committee {
+  letter-spacing: 0;
+  margin-left: 33.0px;
+  min-height: 88px;
+  min-width: 899px;
+  text-align: center;
+}
+
+.laptop .line-4-1 {
+  height: 1px;
+  margin-left: 30.0px;
+  margin-top: 53px;
+  width: 297px;
+}
+
+.laptop .flex-row-6 {
+  align-items: flex-start;
+  display: flex;
+  height: 476px;
+  margin-right: 6.0px;
+  margin-top: 108px;
+  min-width: 1102px;
+}
+
+.laptop .text-21 {
+  letter-spacing: 0;
+  min-height: 476px;
+  min-width: 226px;
+}
+
+.laptop .text-22 {
+  letter-spacing: 0;
+  margin-left: 210px;
+  min-height: 476px;
+  min-width: 240px;
+}
+
+.laptop .text-23 {
+  letter-spacing: 0;
+  margin-left: 169px;
+  min-height: 442px;
+}
+
+.laptop .overlap-group1 {
+  align-items: flex-end;
+  background-color: var(--black-haze);
+  display: flex;
+  height: 604px;
+  justify-content: flex-end;
+  margin-top: 182px;
+  min-width: 1920px;
+  padding: 99.8px 293px;
+}
+
+.laptop .group-19-1 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 1323px;
+}
+
+.laptop .overlap-group2-5 {
+  height: 404px;
+  position: relative;
+  width: 1337px;
+}
+
+.laptop .group-16-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 404px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.laptop .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.19px;
+  min-height: 382px;
+  width: 501px;
+}
+
+.laptop .x1200px-iaest-epng2-1-1 {
+  height: 174px;
+  object-fit: cover;
+  width: 454px;
+}
+
+.laptop .flex-row-7 {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  margin-top: 153px;
+  min-width: 471px;
+}
+
+.laptop .copyright-2021 {
+  letter-spacing: 0;
+  margin-bottom: 0.37px;
+  min-height: 37px;
+  width: 221px;
+}
+
+.laptop .facebook-logo-1 {
+  height: 55px;
+  margin-left: 35px;
+  object-fit: cover;
+  width: 54px;
+}
+
+.laptop .flex-row-item {
+  height: 55px;
+  margin-left: 24px;
+  object-fit: cover;
+  width: 55px;
+}
+
+.laptop .flex-col-1 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 441px;
+  min-height: 391px;
+  width: 383px;
+}
+
+.laptop .come-to-the-office {
+  letter-spacing: 4.52px;
+  min-height: 31px;
+  width: 314px;
+}
+
+.laptop .text-24 {
+  letter-spacing: 0;
+  line-height: 28.0px;
+  margin-top: 19px;
+  min-height: 84px;
+  width: 383px;
+}
+
+.laptop .directly-call-us {
+  letter-spacing: 4.52px;
+  margin-top: 55px;
+  min-height: 31px;
+  width: 273px;
+}
+
+.laptop .phone {
+  letter-spacing: -0.36px;
+  margin-top: 16px;
+  min-height: 24px;
+  width: 161px;
+}
+
+.laptop .leave-us-a-mail {
+  letter-spacing: 4.52px;
+  margin-top: 64px;
+  min-height: 31px;
+  width: 254px;
+}
+
+.laptop .queriesiaestein {
+  letter-spacing: -0.36px;
+  margin-top: 9px;
+  min-height: 24px;
+  width: 139px;
+}
+
+.laptop .image-3 {
+  height: 28px;
+  left: 888px;
+  object-fit: cover;
+  position: absolute;
+  top: 13px;
+  width: 28px;
+}
+
+.laptop .image-1 {
+  height: 28px;
+  left: 888px;
+  object-fit: cover;
+  position: absolute;
+  top: 340px;
+  width: 28px;
+}
+
+.laptop .image-2 {
+  height: 28px;
+  left: 888px;
+  object-fit: cover;
+  position: absolute;
+  top: 206px;
+  width: 28px;
+}
+.tablet {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 3611px;
+  overflow: hidden;
+  width: 770.57px;
+}
+
+.tablet .overlap-group1 {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610f8ab2d6e20479a213c9a4/releases/611a1e577a244dff901a5625/img/14-6-1@1x.png);
+  background-size: 100% 100%;
+  height: 472px;
+  position: relative;
+  width: 771px;
+}
+
+.tablet .rectangle-114 {
+  height: 472px;
+  left: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  width: 771px;
+}
+
+.tablet .rectangle-129 {
+  height: 85px;
+  left: 0;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  width: 771px;
+}
+
+.tablet .text-41 {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: 41.9px;
+  font-weight: 700;
+  left: 20px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 194px;
+  width: 494px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.tablet .text-41.bp1-animate-enter {
+  animation: bp1-animate-enter-frames 0.70s ease-in 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes bp1-animate-enter-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.tablet .line-22 {
+  height: 6px;
+  left: 25px;
+  position: absolute;
+  top: 314px;
+  width: 332px;
+}
+
+.tablet .group-1-1 {
+  align-items: center;
+  display: flex;
+  height: 34px;
+  left: 20px;
+  position: absolute;
+  top: 17px;
+}
+
+.tablet .x1200px-iaest-epng2-1 {
+  align-self: flex-start;
+  height: 34px;
+  margin-top: -0.27px;
+  object-fit: cover;
+  width: 89px;
+}
+
+.tablet .place {
+  letter-spacing: 0;
+  margin-bottom: 0;
+  margin-left: 387px;
+  min-height: 9px;
+  width: 24px;
+}
+
+.tablet .incoming {
+  letter-spacing: 0;
+  margin-bottom: 0.19px;
+  margin-left: 12px;
+  min-height: 9px;
+  width: 36px;
+}
+
+.tablet .outgoing {
+  letter-spacing: 0;
+  margin-bottom: 0;
+  margin-left: 11px;
+  min-height: 9px;
+  width: 35px;
+}
+
+.tablet .member {
+  letter-spacing: 0;
+  margin-bottom: 0;
+  margin-left: 11px;
+  min-height: 9px;
+  width: 32px;
+}
+
+.tablet .corporate {
+  letter-spacing: 0;
+  margin-bottom: 0;
+  margin-left: 11px;
+  min-height: 9px;
+  width: 38px;
+}
+
+.tablet .team {
+  letter-spacing: 0;
+  margin-bottom: 0;
+  margin-left: 11px;
+  min-height: 9px;
+  width: 22px;
+}
+
+.tablet .the-board {
+  letter-spacing: 0;
+  margin-left: 2.54px;
+  margin-top: 78px;
+  min-height: 38px;
+  width: 199px;
+}
+
+.tablet .line-4 {
+  height: 1px;
+  margin-left: 0.45px;
+  margin-top: 13px;
+  width: 90px;
+}
+
+.tablet .group-52 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.55px;
+  margin-top: 35px;
+  min-height: 182px;
+  width: 168px;
+}
+
+.tablet .group-25 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 160px;
+  width: 170px;
+}
+
+.tablet .chairperson {
+  color: var(--tree-poppy);
+  font-family: var(--font-family-montserrat);
+  font-size: 21.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  min-height: 27px;
+  width: 170px;
+}
+
+.tablet .group-15 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.24px;
+  margin-top: 12px;
+  min-height: 121px;
+  width: 94px;
+}
+
+.tablet .overlap-group2 {
+  border-radius: 47.87px;
+  height: 96px;
+  margin-right: 2.0px;
+  margin-top: -1px;
+  position: relative;
+  width: 96px;
+}
+
+.tablet .mask-group {
+  height: 93px;
+  left: 2px;
+  position: absolute;
+  top: 1px;
+  width: 92px;
+}
+
+.tablet .ellipse-2 {
+  border: 3.4px solid var(--texas-rose);
+  border-radius: 47.87px;
+  height: 96px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 96px;
+}
+
+.tablet .aadarsh-ashok {
+  letter-spacing: 0;
+  margin-right: 0.29px;
+  margin-top: 12px;
+  min-height: 15px;
+  text-align: center;
+  width: 77px;
+}
+
+.tablet .group-50 {
+  align-items: flex-start;
+  display: flex;
+  height: 16px;
+  margin-left: 0.09px;
+  margin-top: 6px;
+  min-width: 56px;
+}
+
+.tablet .basic-mail-3 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 15px;
+  margin-bottom: 0;
+  padding: 2.2px 1.2px;
+  width: 15px;
+}
+
+.tablet .basic-mail {
+  height: 10px;
+  width: 12px;
+}
+
+.tablet .brand-linked-in-4 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  margin-left: 4px;
+  padding: 1.7px 1.7px;
+  width: 15px;
+}
+
+.tablet .brand {
+  height: 12px;
+  width: 12px;
+}
+
+.tablet .brand-instagram-4 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 15px;
+  margin-left: 7px;
+  margin-top: 0.4px;
+  padding: 1.4px 1.6px;
+  width: 15px;
+}
+
+.tablet .group-51 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.49px;
+  margin-top: 65px;
+  min-height: 219px;
+  width: 361px;
+}
+
+.tablet .group-18 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 198px;
+  width: 363px;
+}
+
+.tablet .team-exchange {
+  color: var(--navy-blue);
+  font-family: var(--font-family-montserrat);
+  font-size: 21.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-left: 0.15px;
+  min-height: 27px;
+  width: 200px;
+}
+
+.tablet .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 150px;
+  margin-left: 2.0px;
+  margin-top: 20px;
+  min-width: 365px;
+}
+
+.tablet .group-15-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  width: 97px;
+}
+
+.tablet .overlap-group2-1 {
+  border-radius: 47.87px;
+  height: 96px;
+  margin-right: 3.87px;
+  margin-top: -1px;
+  position: relative;
+  width: 96px;
+}
+
+.tablet .mask-group-1 {
+  height: 93px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 93px;
+}
+
+.tablet .ellipse {
+  border-radius: 47.87px;
+  height: 96px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 96px;
+}
+
+.tablet .sanjeeth-p {
+  letter-spacing: 0;
+  margin-right: 1.73px;
+  margin-top: 11px;
+  min-height: 15px;
+  text-align: center;
+  width: 57px;
+}
+
+.tablet .line-6 {
+  height: 1px;
+  margin-right: 3.87px;
+  margin-top: 8px;
+  width: 32px;
+}
+
+.tablet .text-46 {
+  color: var(--navy-blue);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxs);
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 7px;
+  min-height: 14px;
+  text-align: center;
+  width: 95px;
+}
+
+.tablet .group-16 {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  margin-top: 0.08px;
+  min-height: 150px;
+  width: 96px;
+}
+
+.tablet .overlap-group {
+  border-radius: 47.87px;
+  height: 96px;
+  margin-right: 4.0px;
+  margin-top: -1px;
+  position: relative;
+  width: 96px;
+}
+
+.tablet .mask-group-2 {
+  height: 92px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 92px;
+}
+
+.tablet .saumya-modi {
+  letter-spacing: 0;
+  margin-right: 2.67px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 68px;
+}
+
+.tablet .line-7 {
+  height: 1px;
+  margin-right: 4.48px;
+  margin-top: 8px;
+  width: 32px;
+}
+
+.tablet .national-liaison {
+  letter-spacing: 0;
+  margin-right: 2.29px;
+  margin-top: 7px;
+  min-height: 14px;
+  text-align: center;
+  width: 74px;
+}
+
+.tablet .group-17 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  min-height: 150px;
+  width: 96px;
+}
+
+.tablet .vani-mittal {
+  letter-spacing: 0;
+  margin-right: 1.99px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 54px;
+}
+
+.tablet .line {
+  height: 1px;
+  margin-right: 4.0px;
+  margin-top: 8px;
+  width: 32px;
+}
+
+.tablet .national-liaison-1 {
+  letter-spacing: 0;
+  margin-right: 8.51px;
+  margin-top: 7px;
+  min-height: 14px;
+  text-align: center;
+  width: 74px;
+}
+
+.tablet .group-42 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 3.17px;
+  margin-top: 6px;
+  min-width: 320px;
+}
+
+.tablet .group-36 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 15px;
+  margin-bottom: 0;
+  min-width: 55px;
+}
+
+.tablet .basic-mail-1 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 14px;
+  margin-bottom: 0;
+  padding: 2.0px 0.8px;
+  width: 14px;
+}
+
+.tablet .brand-linked-in {
+  align-items: flex-start;
+  display: flex;
+  height: 14px;
+  margin-left: 5px;
+  padding: 1.3px 1.3px;
+  width: 14px;
+}
+
+.tablet .brand-1 {
+  height: 11px;
+  width: 11px;
+}
+
+.tablet .brand-instagram {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 8px;
+  margin-top: 0.4px;
+  padding: 1.5px 1.5px;
+  width: 14px;
+}
+
+.tablet .brand-2 {
+  height: 10px;
+  width: 10px;
+}
+
+.tablet .group-37 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  height: 15px;
+  margin-bottom: 0;
+  margin-left: 79px;
+  min-width: 55px;
+}
+
+.tablet .group-38-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  margin-left: 75px;
+  min-width: 55px;
+}
+
+.tablet .basic-mail-2 {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 14px;
+  margin-bottom: 0;
+  padding: 2.0px 1.0px;
+  width: 14px;
+}
+
+.tablet .brand-linked-in-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 14px;
+  margin-left: 5px;
+  padding: 1.3px 1.5px;
+  width: 14px;
+}
+
+.tablet .brand-3 {
+  height: 11px;
+  width: 10px;
+}
+
+.tablet .group-53 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.75px;
+  margin-top: 65px;
+  min-height: 233px;
+  width: 360px;
+}
+
+.tablet .group-19 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 212px;
+  width: 362px;
+}
+
+.tablet .team-incoming {
+  color: var(--cinnabar);
+  font-family: var(--font-family-montserrat);
+  font-size: 21.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.22px;
+  min-height: 27px;
+  width: 193px;
+}
+
+.tablet .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 164px;
+  margin-left: 2.0px;
+  margin-top: 20px;
+  min-width: 364px;
+}
+
+.tablet .group-14 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  min-height: 164px;
+  width: 96px;
+}
+
+.tablet .aditya-italia {
+  letter-spacing: 0;
+  margin-right: 1.95px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 60px;
+}
+
+.tablet .head-incoming {
+  letter-spacing: 0;
+  margin-right: 2.15px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 72px;
+}
+
+.tablet .group-15-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  min-height: 164px;
+  width: 96px;
+}
+
+.tablet .atharva-uplap {
+  letter-spacing: 0;
+  margin-right: 2.07px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 73px;
+}
+
+.tablet .text-47 {
+  letter-spacing: 0;
+  margin-right: 2.73px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 57px;
+}
+
+.tablet .group-16-1 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  min-height: 164px;
+  width: 96px;
+}
+
+.tablet .nimisha-modi {
+  letter-spacing: 0;
+  margin-right: 1.99px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 69px;
+}
+
+.tablet .text-48 {
+  letter-spacing: 0;
+  margin-right: 2.21px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 57px;
+}
+
+.tablet .group-43 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 0.39px;
+  margin-top: 6px;
+  min-width: 323px;
+}
+
+.tablet .group-36-1 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  height: 15px;
+  margin-bottom: 0;
+  min-width: 55px;
+}
+
+.tablet .brand-linked-in-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 14px;
+  margin-left: 5px;
+  padding: 1.5px 1.3px;
+  width: 14px;
+}
+
+.tablet .brand-4 {
+  height: 10px;
+  width: 11px;
+}
+
+.tablet .brand-instagram-1 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 8px;
+  margin-top: 0.4px;
+  padding: 1.3px 1.5px;
+  width: 14px;
+}
+
+.tablet .group {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 15px;
+  margin-bottom: 0;
+  margin-left: 78px;
+  min-width: 55px;
+}
+
+.tablet .group-38 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  margin-left: 78px;
+  min-width: 55px;
+}
+
+.tablet .group-54 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4.45px;
+  margin-top: 65px;
+  min-height: 234px;
+  width: 365px;
+}
+
+.tablet .group-21 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 213px;
+  width: 367px;
+}
+
+.tablet .team-administration {
+  color: var(--puerto-rico);
+  font-family: var(--font-family-montserrat);
+  font-size: 21.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.24px;
+  min-height: 27px;
+  width: 271px;
+}
+
+.tablet .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 165px;
+  margin-left: 2.0px;
+  margin-top: 20px;
+  min-width: 369px;
+}
+
+.tablet .group-18-1 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 164px;
+  width: 99px;
+}
+
+.tablet .overlap-group4 {
+  border-radius: 47.87px;
+  height: 96px;
+  margin-right: 4.04px;
+  margin-top: -1px;
+  position: relative;
+  width: 96px;
+}
+
+.tablet .mask-group-4 {
+  height: 93px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 92px;
+}
+
+.tablet .pratyusha-m {
+  letter-spacing: 0;
+  margin-right: 2.47px;
+  margin-top: 11px;
+  min-height: 15px;
+  text-align: center;
+  width: 66px;
+}
+
+.tablet .line-7-1 {
+  height: 2px;
+  margin-right: 4.04px;
+  margin-top: 6px;
+  width: 32px;
+}
+
+.tablet .text-51 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 97px;
+}
+
+.tablet .group-17-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 39px;
+  min-height: 164px;
+  width: 96px;
+}
+
+.tablet .name {
+  letter-spacing: 0;
+  margin-right: 2.99px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 42px;
+}
+
+.tablet .line-7-2 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 9px;
+  width: 32px;
+}
+
+.tablet .text {
+  letter-spacing: 0;
+  margin-right: 2.44px;
+  margin-top: 6px;
+  min-height: 27px;
+  text-align: center;
+  width: 68px;
+}
+
+.tablet .group-16-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  margin-top: 0;
+  min-height: 164px;
+  width: 96px;
+}
+
+.tablet .navya-kriti {
+  letter-spacing: 0;
+  margin-right: 2.83px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 55px;
+}
+
+.tablet .line-7-3 {
+  height: 1px;
+  margin-right: 4.0px;
+  margin-top: 9px;
+  width: 32px;
+}
+
+.tablet .group-44 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 1.24px;
+  margin-top: 6px;
+  min-width: 326px;
+}
+
+.tablet .group-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  min-width: 55px;
+}
+
+.tablet .brand-instagram-2 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 8px;
+  margin-top: 0.41px;
+  padding: 1.5px 1.5px;
+  width: 14px;
+}
+
+.tablet .group-37-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  margin-left: 81px;
+  min-width: 55px;
+}
+
+.tablet .brand-instagram-3 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 8px;
+  margin-top: 0.41px;
+  padding: 1.5px 1.3px;
+  width: 14px;
+}
+
+.tablet .brand-linked-in-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 14px;
+  margin-left: 5px;
+  padding: 1.5px 1.5px;
+  width: 14px;
+}
+
+.tablet .group-56 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.1px;
+  margin-top: 66px;
+  min-height: 252px;
+  width: 505px;
+}
+
+.tablet .group-23 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 231px;
+  width: 507px;
+}
+
+.tablet .text-52 {
+  color: var(--vivid-violet);
+  font-family: var(--font-family-montserrat);
+  font-size: 19.6px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.23px;
+  min-height: 48px;
+  text-align: center;
+  width: 330px;
+}
+
+.tablet .flex-row-3 {
+  align-items: flex-end;
+  display: flex;
+  height: 164px;
+  margin-right: 0;
+  margin-top: 18px;
+  min-width: 507px;
+}
+
+.tablet .group-14-1 {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 164px;
+  width: 96px;
+}
+
+.tablet .prateek-jha {
+  letter-spacing: 0;
+  margin-right: 3.36px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 58px;
+}
+
+.tablet .head-bdpr {
+  letter-spacing: 0;
+  margin-right: 2.29px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 59px;
+}
+
+.tablet .group-15-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 37px;
+  min-height: 164px;
+  width: 107px;
+}
+
+.tablet .overlap-group-1 {
+  border-radius: 47.87px;
+  height: 96px;
+  margin-right: 3.31px;
+  margin-top: -1px;
+  position: relative;
+  width: 96px;
+}
+
+.tablet .shantanu-joshi {
+  letter-spacing: 0;
+  margin-right: 2.01px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 75px;
+}
+
+.tablet .line-6-1 {
+  height: 1px;
+  margin-right: 3.32px;
+  margin-top: 8px;
+  width: 32px;
+}
+
+.tablet .text-53 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 105px;
+}
+
+.tablet .group-18-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 37px;
+  min-height: 164px;
+  width: 96px;
+}
+
+.tablet .aryan-mukund {
+  letter-spacing: 0;
+  margin-right: 2.43px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 74px;
+}
+
+.tablet .text-54 {
+  letter-spacing: 0;
+  margin-right: 2.69px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 91px;
+}
+
+.tablet .group-29 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  min-height: 164px;
+  width: 94px;
+}
+
+.tablet .group-17-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 129px;
+  width: 94px;
+}
+
+.tablet .shrimanti-pal {
+  letter-spacing: 0;
+  margin-right: 0.38px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 67px;
+}
+
+.tablet .line-8 {
+  height: 1px;
+  margin-right: 1.49px;
+  margin-top: 8px;
+  width: 32px;
+}
+
+.tablet .text-55 {
+  letter-spacing: 0;
+  margin-left: 4.34px;
+  margin-top: 8px;
+  min-height: 27px;
+  text-align: center;
+  width: 86px;
+}
+
+.tablet .group-55 {
+  align-items: center;
+  display: flex;
+  margin-left: 0.14px;
+  margin-top: 6px;
+  min-width: 468px;
+}
+
+.tablet .group-36-2 {
+  align-items: flex-start;
+  align-self: flex-start;
+  display: flex;
+  height: 15px;
+  min-width: 55px;
+}
+
+.tablet .group-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  margin-left: 83px;
+  margin-top: 0;
+  min-width: 55px;
+}
+
+.tablet .brand-linked-in-5 {
+  align-items: flex-start;
+  display: flex;
+  height: 14px;
+  margin-left: 7px;
+  padding: 1.3px 1.5px;
+  width: 14px;
+}
+
+.tablet .brand-instagram-5 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 7px;
+  margin-top: 0.41px;
+  padding: 1.5px 1.5px;
+  width: 14px;
+}
+
+.tablet .group-58 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.34px;
+  margin-top: 65px;
+  min-height: 204px;
+  width: 226px;
+}
+
+.tablet .group-24 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.0px;
+  min-height: 183px;
+  width: 228px;
+}
+
+.tablet .team-finance {
+  color: var(--chateau-green-2);
+  font-family: var(--font-family-montserrat);
+  font-size: 21.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.23px;
+  min-height: 27px;
+  width: 175px;
+}
+
+.tablet .flex-row-4 {
+  align-items: flex-start;
+  display: flex;
+  height: 143px;
+  margin-left: 2.0px;
+  margin-top: 13px;
+  min-width: 230px;
+}
+
+.tablet .group-15-4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 142px;
+  width: 96px;
+}
+
+.tablet .mask-group-3 {
+  height: 92px;
+  left: 1px;
+  position: absolute;
+  top: 2px;
+  width: 93px;
+}
+
+.tablet .saharsh-barve {
+  letter-spacing: 0;
+  margin-right: 2.67px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 74px;
+}
+
+.tablet .line-1 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 3px;
+  width: 32px;
+}
+
+.tablet .head-finance {
+  letter-spacing: 0;
+  margin-right: 2.28px;
+  margin-top: 3px;
+  min-height: 14px;
+  text-align: center;
+  width: 69px;
+}
+
+.tablet .group-17-3 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  min-height: 143px;
+  width: 96px;
+}
+
+.tablet .shreya-sharma {
+  letter-spacing: 0;
+  margin-right: 2.42px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 76px;
+}
+
+.tablet .finance-in-charge {
+  letter-spacing: 0;
+  margin-right: 2.02px;
+  margin-top: 4px;
+  min-height: 14px;
+  text-align: center;
+  width: 85px;
+}
+
+.tablet .group-57 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 0.14px;
+  margin-top: 6px;
+  min-width: 189px;
+}
+
+.tablet .brand-instagram-6 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 8px;
+  margin-top: 0.4px;
+  padding: 1.5px 1.3px;
+  width: 14px;
+}
+
+.tablet .group-60 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20.17px;
+  margin-top: 65px;
+  min-height: 466px;
+  width: 380px;
+}
+
+.tablet .group-30 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: -2.0px;
+  min-height: 232px;
+  width: 382px;
+}
+
+.tablet .text-56 {
+  color: var(--razzmatazz);
+  font-family: var(--font-family-montserrat);
+  font-size: 19.6px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 0.23px;
+  min-height: 48px;
+  text-align: center;
+  width: 269px;
+}
+
+.tablet .flex-row-5 {
+  align-items: flex-start;
+  display: flex;
+  height: 165px;
+  margin-left: 2.0px;
+  margin-top: 18px;
+  min-width: 384px;
+}
+
+.tablet .group-14-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 164px;
+  width: 129px;
+}
+
+.tablet .overlap-group2-2 {
+  border-radius: 47.87px;
+  height: 96px;
+  margin-left: 3.52px;
+  margin-top: -1px;
+  position: relative;
+  width: 96px;
+}
+
+.tablet .siddharth-shah {
+  letter-spacing: 0;
+  margin-left: 4.89px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 78px;
+}
+
+.tablet .line-5 {
+  height: 2px;
+  margin-right: 4.2px;
+  margin-top: 7px;
+  width: 32px;
+}
+
+.tablet .text-57 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 127px;
+}
+
+.tablet .group-15-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-top: 0;
+  min-height: 164px;
+  width: 96px;
+}
+
+.tablet .parikalp-singh {
+  letter-spacing: 0;
+  margin-right: 1.82px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 72px;
+}
+
+.tablet .line-2 {
+  height: 2px;
+  margin-right: 4.0px;
+  margin-top: 7px;
+  width: 32px;
+}
+
+.tablet .text-58 {
+  letter-spacing: 0;
+  margin-right: 2.29px;
+  margin-top: 7px;
+  min-height: 27px;
+  text-align: center;
+  width: 84px;
+}
+
+.tablet .group-17-4 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+  min-height: 165px;
+  width: 96px;
+}
+
+.tablet .nandini-dixit {
+  letter-spacing: 0;
+  margin-right: 2.51px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 65px;
+}
+
+.tablet .text-59 {
+  letter-spacing: 0;
+  margin-right: 1.63px;
+  margin-top: 8px;
+  min-height: 27px;
+  text-align: center;
+  width: 84px;
+}
+
+.tablet .group-45 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  margin-left: 16.73px;
+  margin-top: 5px;
+  min-width: 327px;
+}
+
+.tablet .group-36-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  margin-top: 0;
+  min-width: 55px;
+}
+
+.tablet .group-37-2 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 15px;
+  margin-bottom: 0;
+  margin-left: 82px;
+  min-width: 55px;
+}
+
+.tablet .group-59 {
+  height: 174px;
+  margin-right: 0.42px;
+  margin-top: 40px;
+  position: relative;
+  width: 366px;
+}
+
+.tablet .group-15-6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 102px;
+}
+
+.tablet .overlap-group2-3 {
+  border-radius: 47.87px;
+  height: 96px;
+  margin-right: 6.51px;
+  margin-top: -1px;
+  position: relative;
+  width: 96px;
+}
+
+.tablet .mask-group-5 {
+  height: 92px;
+  left: 3px;
+  position: absolute;
+  top: 2px;
+  width: 93px;
+}
+
+.tablet .prabhat-namdharini {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 100px;
+}
+
+.tablet .line-6-2 {
+  height: 1px;
+  margin-right: 6.52px;
+  margin-top: 8px;
+  width: 32px;
+}
+
+.tablet .data-analyst {
+  letter-spacing: 0;
+  margin-right: 4.8px;
+  margin-top: 9px;
+  min-height: 14px;
+  text-align: center;
+  width: 60px;
+}
+
+.tablet .overlap-group5 {
+  height: 174px;
+  left: 22px;
+  position: absolute;
+  top: 0;
+  width: 348px;
+}
+
+.tablet .group-18-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 245px;
+  position: absolute;
+  top: 0;
+  width: 103px;
+}
+
+.tablet .sai-rohit {
+  letter-spacing: 0;
+  margin-right: 1.51px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 46px;
+}
+
+.tablet .line-6-3 {
+  height: 1px;
+  margin-right: 3.31px;
+  margin-top: 8px;
+  width: 32px;
+}
+
+.tablet .text-60 {
+  letter-spacing: 0;
+  margin-right: 2.0px;
+  margin-top: 9px;
+  min-height: 27px;
+  text-align: center;
+  width: 101px;
+}
+
+.tablet .group-46 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 159px;
+}
+
+.tablet .group-36-4 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  height: 15px;
+  margin-top: 0;
+  min-width: 51px;
+}
+
+.tablet .brand-linked-in-6 {
+  align-items: flex-start;
+  display: flex;
+  height: 14px;
+  margin-left: 7px;
+  padding: 1.5px 1.5px;
+  width: 14px;
+}
+
+.tablet .brand-instagram-7 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 2px;
+  margin-top: 0.23px;
+  padding: 1.3px 1.5px;
+  width: 14px;
+}
+
+.tablet .group-37-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 15px;
+  margin-left: 83px;
+  min-width: 55px;
+}
+
+.tablet .brand-instagram-8 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 9px;
+  margin-top: 0.4px;
+  padding: 1.3px 1.5px;
+  width: 14px;
+}
+
+.tablet .group-38-2 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 15px;
+  margin-bottom: 0;
+  margin-left: 78px;
+  min-width: 53px;
+}
+
+.tablet .brand-instagram-9 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 14px;
+  margin-left: 6px;
+  margin-top: 0.31px;
+  padding: 1.3px 1.3px;
+  width: 14px;
+}
+
+.tablet .group-17-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 137px;
+  position: absolute;
+  top: 0;
+  width: 96px;
+}
+
+.tablet .sanya-gupta {
+  letter-spacing: 0;
+  margin-right: 2.94px;
+  margin-top: 10px;
+  min-height: 15px;
+  text-align: center;
+  width: 65px;
+}
+
+.tablet .it-manager {
+  letter-spacing: 0;
+  margin-right: 1.63px;
+  margin-top: 10px;
+  min-height: 14px;
+  text-align: center;
+  width: 53px;
+}
+
+.tablet .group-31 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8.11px;
+  margin-top: 131px;
+  min-height: 317px;
+  width: 488px;
+}
+
+.tablet .the-local-committee {
+  letter-spacing: 0;
+  margin-left: 11.03px;
+  min-height: 38px;
+  text-align: center;
+  width: 394px;
+}
+
+.tablet .line-4-1 {
+  height: 1px;
+  margin-left: 8.59px;
+  margin-top: 23px;
+  width: 130px;
+}
+
+.tablet .flex-row-6 {
+  align-items: flex-start;
+  display: flex;
+  height: 208px;
+  margin-right: 6.0px;
+  margin-top: 47px;
+  min-width: 482px;
+}
+
+.tablet .text-42 {
+  letter-spacing: 0;
+  min-height: 208px;
+  width: 100px;
+}
+
+.tablet .text-43 {
+  letter-spacing: 0;
+  margin-left: 90px;
+  min-height: 208px;
+  width: 106px;
+}
+
+.tablet .text-44 {
+  letter-spacing: 0;
+  margin-left: 72px;
+  min-height: 193px;
+  width: 113px;
+}
+
+.tablet .overlap-group-2 {
+  align-items: flex-start;
+  background-color: var(--black-haze);
+  display: flex;
+  height: 268px;
+  margin-top: 71px;
+  min-width: 771px;
+  padding: 43.9px 90.6px;
+}
+
+.tablet .group-19-1 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 578px;
+}
+
+.tablet .overlap-group2-4 {
+  height: 176px;
+  position: relative;
+  width: 592px;
+}
+
+.tablet .group-16-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 176px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.tablet .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.35px;
+  min-height: 167px;
+  width: 219px;
+}
+
+.tablet .x1200px-iaest-epng2-1-1 {
+  height: 76px;
+  object-fit: cover;
+  width: 198px;
+}
+
+.tablet .flex-row-7 {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  margin-top: 66px;
+  min-width: 205px;
+}
+
+.tablet .copyright-2021 {
+  color: var(--black);
+  font-family: var(--font-family-nunito);
+  font-size: 11.8px;
+  letter-spacing: 0;
+  margin-bottom: 0.41px;
+  min-height: 16px;
+  width: 98px;
+}
+
+.tablet .facebook-logo-1 {
+  height: 24px;
+  margin-left: 14px;
+  object-fit: cover;
+  width: 24px;
+}
+
+.tablet .flex-row-item {
+  height: 24px;
+  margin-left: 10px;
+  object-fit: cover;
+  width: 24px;
+}
+
+.tablet .flex-col-1 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 192px;
+  min-height: 171px;
+  width: 168px;
+}
+
+.tablet .come-to-the-office {
+  letter-spacing: 1.97px;
+  min-height: 13px;
+  width: 138px;
+}
+
+.tablet .text-45 {
+  letter-spacing: 0;
+  line-height: 12.2px;
+  margin-top: 8px;
+  min-height: 37px;
+  width: 168px;
+}
+
+.tablet .directly-call-us {
+  letter-spacing: 1.97px;
+  margin-top: 24px;
+  min-height: 13px;
+  width: 120px;
+}
+
+.tablet .phone {
+  letter-spacing: -0.16px;
+  margin-top: 7px;
+  min-height: 11px;
+  width: 71px;
+}
+
+.tablet .leave-us-a-mail {
+  letter-spacing: 1.97px;
+  margin-top: 28px;
+  min-height: 13px;
+  width: 112px;
+}
+
+.tablet .queriesiaestein {
+  letter-spacing: -0.16px;
+  margin-top: 4px;
+  min-height: 11px;
+  width: 62px;
+}
+
+.tablet .image-3 {
+  height: 12px;
+  left: 387px;
+  object-fit: cover;
+  position: absolute;
+  top: 6px;
+  width: 12px;
+}
+
+.tablet .image-1 {
+  height: 12px;
+  left: 387px;
+  object-fit: cover;
+  position: absolute;
+  top: 149px;
+  width: 12px;
+}
+
+.tablet .image-2 {
+  height: 12px;
+  left: 387px;
+  object-fit: cover;
+  position: absolute;
+  top: 90px;
+  width: 12px;
+}
+@media screen and (max-width: 769.5679321289062px) {
+  .screen.laptop { 
+    display: none;
+   }
+  .screen.tablet { 
+    display: none;
+   }
+  .screen.ipad-pro-11-1 { 
+    display: none;
+   }
+}
+@media screen and (min-width: 770.5679321289062px) and (max-width: 1279px) {
+  .screen.iphone-11-pro-x-3 { 
+    display: none;
+   }
+  .screen.laptop { 
+    display: none;
+   }
+  .screen.ipad-pro-11-1 { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .screen.iphone-11-pro-x-3 { 
+    display: none;
+   }
+  .screen.laptop { 
+    display: none;
+   }
+  .screen.tablet { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1920px) {
+  .screen.iphone-11-pro-x-3 { 
+    display: none;
+   }
+  .screen.tablet { 
+    display: none;
+   }
+  .screen.ipad-pro-11-1 { 
+    display: none;
+   }
+}
