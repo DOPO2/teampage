@@ -522,7 +522,7 @@
   mix-blend-mode: multiply;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 .ipad-pro-11-1 .rectangle-129 {
@@ -1993,7 +1993,7 @@ transform: translate(0,0);
   display: flex;
   flex-direction: column;
   margin-left: 22.0px;
-  margin-top: 140px;
+  margin-top: 150px;
   min-height: 727px;
   width: 1108px;
 }
@@ -2049,7 +2049,7 @@ transform: translate(0,0);
   height: 604px;
   justify-content: flex-end;
   margin-right: 0px;
-  margin-top: 140px;
+  margin-top: 100px;
   min-width: 100%;
   padding: 102px 68.3px;
 }
@@ -2198,21 +2198,26 @@ transform: translate(0,0);
   top: 199px;
   width: 28px;
 }
+
+ .board-section {
+   margin-top: 500px;
+   align-items: right;
+}
 .iphone-11-pro-x-3 {
   align-items: center;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: 3077px;
   overflow: hidden;
-  width: 360.05px;
+  width: 100vw;
+  height: auto;
 }
 
 .iphone-11-pro-x-3 .overlap-group-2 {
   height: 499px;
   margin-right: 0.3px;
   position: relative;
-  width: 361px;
+  width: 100vw;
 }
 
 .iphone-11-pro-x-3 .x14-6 {
@@ -2229,7 +2234,7 @@ transform: translate(0,0);
   mix-blend-mode: multiply;
   position: absolute;
   top: 1px;
-  width: 360px;
+  width: 100vw;
 }
 
 .iphone-11-pro-x-3 .rectangle-129 {
@@ -2238,7 +2243,7 @@ transform: translate(0,0);
   mix-blend-mode: darken;
   position: absolute;
   top: 0;
-  width: 360px;
+  width: 100vw;
 }
 
 .iphone-11-pro-x-3 .text-1 {
@@ -2279,6 +2284,7 @@ transform: translate(0,0);
   position: absolute;
   top: 25px;
   width: 126px;
+
 }
 
 .iphone-11-pro-x-3 .line-22 {
@@ -2294,7 +2300,7 @@ transform: translate(0,0);
   display: flex;
   flex-direction: column;
   height: 36px;
-  left: 300px;
+  right: 31.2px;
   padding: 9.9px 0;
   position: absolute;
   top: 20px;
@@ -4054,7 +4060,7 @@ transform: translate(0,0);
 }
 
 .iphone-11-pro-x-3 .overlap-group1 {
-  align-items: flex-end;
+  align-items: center;
   background-color: var(--black-haze);
   display: flex;
   flex-direction: column;
@@ -4062,7 +4068,7 @@ transform: translate(0,0);
   margin-top: 45px;
   min-height: 386px;
   padding: 15.1px 85.5px;
-  width: 364px;
+  width: 100vw;
 }
 
 .iphone-11-pro-x-3 .group-123 {
@@ -5921,14 +5927,15 @@ transform: translate(0,0);
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 3611px;
   overflow: hidden;
-  width: 100%;
+  width: 770.57px;
 }
 
 .tablet .overlap-group1 {
   background-size: 100% 100%;
   height: 472px;
+  position: relative;
   width: 100%;
 }
 
@@ -5991,9 +5998,9 @@ transform: translate(0,0);
   align-items: center;
   display: flex;
   height: 34px;
+  left: 20px;
   position: absolute;
   top: 17px;
-  left: 100px;
 }
 
 .tablet .x1200px-iaest-epng2-1 {
@@ -6034,7 +6041,6 @@ transform: translate(0,0);
   margin-left: 11px;
   min-height: 9px;
   width: 32px;
-  right: 40px ;
 }
 
 .tablet .corporate {
@@ -7664,7 +7670,7 @@ transform: translate(0,0);
   display: flex;
   height: 268px;
   margin-top: 71px;
-  min-width: 100%;
+  min-width: 771px;
   padding: 43.9px 90.6px;
 }
 
@@ -7684,7 +7690,7 @@ transform: translate(0,0);
   align-items: flex-start;
   display: flex;
   height: 176px;
-  left: 80px;
+  left: 0;
   position: absolute;
   top: 0;
 }
@@ -7795,7 +7801,6 @@ transform: translate(0,0);
   position: absolute;
   top: 6px;
   width: 12px;
-  right: 220px;
 }
 
 .tablet .image-1 {
