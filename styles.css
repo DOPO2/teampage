@@ -7671,7 +7671,7 @@ transform: translate(0,0);
   height: 268px;
   margin-top: 71px;
   min-width: 100%;
-  padding: 43.9px 90.6px;
+  padding: 43.9px 0px;
 }
 
 .tablet .group-19-1 {
@@ -7821,7 +7821,7 @@ transform: translate(0,0);
   top: 90px;
   width: 12px;
 }
-@media screen and (max-width: 769.5679321289062px) {
+@media screen and (max-width: 765px) and (min-width: 1px)  {
   .screen.laptop { 
     display: none;
    }
@@ -7832,7 +7832,7 @@ transform: translate(0,0);
     display: none;
    }
 }
-@media screen and (min-width: 770.5679321289062px) and (max-width: 1279px) {
+@media screen and (min-width: 766px) and (max-width: 1274px) {
   .screen.iphone-11-pro-x-3 { 
     display: none;
    }
@@ -7843,7 +7843,7 @@ transform: translate(0,0);
     display: none;
    }
 }
-@media screen and (min-width: 1280px) and (max-width: 1919px) {
+@media screen and (min-width: 1275px) and (max-width: 1912px) {
   .screen.iphone-11-pro-x-3 { 
     display: none;
    }
@@ -7854,7 +7854,7 @@ transform: translate(0,0);
     display: none;
    }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1913px) {
   .screen.iphone-11-pro-x-3 { 
     display: none;
    }
